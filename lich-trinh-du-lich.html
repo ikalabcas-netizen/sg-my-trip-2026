@@ -1,431 +1,527 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tour K&#7881; ni&#7879;m 15 n&#259;m ng&#224;y c&#432;&#7899;i Thanh Th&#7911;y | 27/04 - 01/05/2026</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
-        :root{--pri:#0ea5e9;--pri-dk:#0284c7;--accent:#f59e0b;--sg:#ef4444;--mlk:#f97316;--kl:#06b6d4;--bg:#f8fafc;--card:#fff;--txt:#1e293b;--txt2:#64748b;--bdr:#e2e8f0;--ok:#22c55e;--sh:0 1px 3px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.04);--sh2:0 4px 12px rgba(0,0,0,.1),0 12px 40px rgba(0,0,0,.06)}
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
-        .hero{position:relative;height:420px;background:linear-gradient(135deg,#0c4a6e,#0ea5e9 50%,#06b6d4);overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
-        .hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1600&q=80') center/cover;opacity:.25}
-        .hero-content{position:relative;z-index:2;color:#fff;padding:0 20px}
-        .hero h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:700;margin-bottom:12px;text-shadow:0 2px 20px rgba(0,0,0,.3)}
-        .hero .sub{font-size:1.1rem;font-weight:300;opacity:.9;margin-bottom:20px}
-        .hero .badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
-        .rbadge{background:rgba(255,255,255,.2);backdrop-filter:blur(10px);padding:6px 16px;border-radius:20px;font-size:.85rem;font-weight:500;border:1px solid rgba(255,255,255,.3)}
-        .budget-bar{background:linear-gradient(90deg,#059669,#10b981);color:#fff;text-align:center;padding:14px 20px;font-weight:500;font-size:.95rem}
-        .budget-bar strong{font-size:1.15rem}
-        .tab-nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--bdr);display:flex;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.05)}
-        .tab-btn{padding:16px 32px;border:none;background:none;font-family:inherit;font-size:1rem;font-weight:500;color:var(--txt2);cursor:pointer;position:relative;transition:color .2s;display:flex;align-items:center;gap:8px}
-        .tab-btn:hover{color:var(--pri)}
-        .tab-btn.active{color:var(--pri);font-weight:600}
-        .tab-btn.active::after{content:'';position:absolute;bottom:0;left:16px;right:16px;height:3px;background:var(--pri);border-radius:3px 3px 0 0}
-        .tab-content{display:none}.tab-content.active{display:block}
-        .container{max-width:960px;margin:0 auto;padding:0 20px}
-        .day-section{margin:40px 0}
-        .day-header{display:flex;align-items:center;gap:16px;margin-bottom:24px;padding-bottom:16px;border-bottom:2px solid var(--bdr)}
-        .day-num{width:56px;height:56px;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-weight:700;flex-shrink:0}
-        .day-num .n{font-size:1.4rem;line-height:1}.day-num .l{font-size:.6rem;text-transform:uppercase;letter-spacing:1px}
-        .day-header h2{font-family:'Playfair Display',serif;font-size:1.5rem}
-        .day-header .date{font-size:.9rem;color:var(--txt2);font-weight:400}
-        .c-sg .day-num{background:linear-gradient(135deg,var(--sg),#dc2626)}
-        .c-mlk .day-num{background:linear-gradient(135deg,var(--mlk),#ea580c)}
-        .c-kl .day-num{background:linear-gradient(135deg,var(--kl),#0891b2)}
-        .c-home .day-num{background:linear-gradient(135deg,#6366f1,#4f46e5)}
-        .agrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-bottom:24px}
-        .acard{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:var(--sh);transition:transform .2s,box-shadow .2s}
-        .acard:hover{transform:translateY(-4px);box-shadow:var(--sh2)}
-        .acard img{width:100%;height:180px;object-fit:cover}
-        .acard .info{padding:16px}
-        .acard h3{font-size:1rem;margin-bottom:6px}
-        .acard .desc{font-size:.85rem;color:var(--txt2);margin-bottom:10px}
-        .acard .meta{display:flex;gap:12px;flex-wrap:wrap}
-        .badge{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:20px;font-size:.75rem;font-weight:600}
-        .b-free{background:#dcfce7;color:#15803d}.b-paid{background:#fef3c7;color:#a16207}.b-time{background:#e0e7ff;color:#4338ca}
-        .tl{position:relative;padding-left:32px}
-        .tl::before{content:'';position:absolute;left:11px;top:8px;bottom:8px;width:2px;background:var(--bdr)}
-        .tl-item{position:relative;padding-bottom:20px}
-        .tl-item::before{content:'';position:absolute;left:-25px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--pri);border:3px solid #fff;box-shadow:0 0 0 2px var(--pri)}
-        .tl-item .time{font-size:.8rem;font-weight:600;color:var(--pri-dk);margin-bottom:4px}
-        .tl-item .act{font-size:.95rem}
-        .tl-item .note{font-size:.82rem;color:var(--txt2);margin-top:2px;font-style:italic}
-        .hcard{background:linear-gradient(135deg,#eff6ff,#f0f9ff);border:1px solid #bfdbfe;border-radius:16px;padding:20px;margin:20px 0}
-        .hcard h4{font-size:1rem;margin-bottom:12px;display:flex;align-items:center;gap:8px}
-        .hlist{list-style:none;display:grid;gap:10px}
-        .hitem{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
-        .hitem .nm{font-weight:500;font-size:.92rem}
-        .hitem .pr{font-size:.85rem;color:var(--txt2)}
-        .hitem a{display:inline-flex;align-items:center;gap:4px;padding:5px 14px;background:var(--pri);color:#fff;text-decoration:none;border-radius:8px;font-size:.8rem;font-weight:500;transition:background .2s}
-        .hitem a:hover{background:var(--pri-dk)}
-        .tcard{background:linear-gradient(135deg,#faf5ff,#fdf4ff);border:1px solid #d8b4fe;border-radius:16px;padding:20px;margin:20px 0}
-        .tcard h4{font-size:1rem;margin-bottom:8px;display:flex;align-items:center;gap:8px}
-        .tcard .det{font-size:.9rem;color:var(--txt2)}.tcard .det strong{color:var(--txt)}
-        .fcard{background:linear-gradient(135deg,#fff7ed,#fffbeb);border:1px solid #fed7aa;border-radius:16px;padding:20px;margin:20px 0}
-        .fcard h4{font-size:1rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
-        .flist{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:8px;list-style:none}
-        .flist li{font-size:.88rem;padding:6px 0}.flist li strong{display:block}
-        .btable{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden;box-shadow:var(--sh)}
-        .btable th,.btable td{padding:12px 16px;text-align:left;border-bottom:1px solid var(--bdr);font-size:.9rem}
-        .btable th{background:#f1f5f9;font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.5px;color:var(--txt2)}
-        .btable tr:last-child td{border-bottom:none}
-        .btable .total{background:linear-gradient(90deg,#059669,#10b981);color:#fff;font-weight:700}
-        .btable .total td{border-bottom:none;font-size:1rem}
-        .ckgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
-        .ckcard{background:#fff;border-radius:16px;padding:20px;box-shadow:var(--sh)}
-        .ckcard h4{font-size:1rem;margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--bdr);display:flex;align-items:center;gap:8px}
-        .ckitem{display:flex;align-items:flex-start;gap:10px;padding:8px 0;border-bottom:1px solid #f1f5f9}
-        .ckitem:last-child{border-bottom:none}
-        .ckitem input[type=checkbox]{width:18px;height:18px;margin-top:2px;accent-color:var(--pri);flex-shrink:0;cursor:pointer}
-        .ckitem label{font-size:.9rem;cursor:pointer}
-        .ckitem label .hint{display:block;font-size:.78rem;color:var(--txt2);margin-top:2px}
-        .ckitem input:checked+label{text-decoration:line-through;color:var(--txt2)}
-        .tips{background:linear-gradient(135deg,#fefce8,#fef9c3);border:1px solid #fde047;border-radius:16px;padding:24px;margin:30px 0}
-        .tips h3{font-size:1.1rem;margin-bottom:14px}
-        .tips ul{list-style:none;display:grid;gap:8px}
-        .tips li{font-size:.9rem;padding-left:24px;position:relative}
-        .tips li::before{content:'\2714';position:absolute;left:0;color:var(--ok)}
-        footer{background:#1e293b;color:#94a3b8;text-align:center;padding:30px 20px;margin-top:40px;font-size:.85rem}
-        .pbar{display:flex;justify-content:center;align-items:center;gap:0;padding:24px 20px 0}
-        .pstep{display:flex;flex-direction:column;align-items:center}
-        .pdot{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;color:#fff;z-index:2}
-        .plbl{font-size:.7rem;margin-top:6px;font-weight:500;text-align:center;color:var(--txt2)}
-        .pline{width:80px;height:3px;flex-shrink:0;margin-top:-18px}
-        @media(max-width:640px){.hero{height:320px}.hero h1{font-size:1.6rem}.agrid,.ckgrid{grid-template-columns:1fr}.tab-btn{padding:12px 16px;font-size:.9rem}.pline{width:40px}.btable th,.btable td{padding:8px 10px;font-size:.82rem}}
-        @media print{.tab-nav,.hero{display:none}.tab-content{display:block!important}}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tour K&#7881; ni&#7879;m 15 n&#259;m ng&#224;y c&#432;&#7899;i Thanh Th&#7911;y | 27/04 - 01/05/2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+:root{--pri:#0ea5e9;--pri-dk:#0284c7;--sg:#ef4444;--mlk:#f97316;--kl:#06b6d4;--bg:#f8fafc;--card:#fff;--txt:#1e293b;--txt2:#64748b;--bdr:#e2e8f0;--ok:#22c55e;--sh:0 1px 3px rgba(0,0,0,.08),0 4px 12px rgba(0,0,0,.04);--sh2:0 4px 12px rgba(0,0,0,.1),0 12px 40px rgba(0,0,0,.06)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6}
+.hero{position:relative;height:400px;background:linear-gradient(135deg,#0c4a6e,#0ea5e9 50%,#06b6d4);overflow:hidden;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero::before{content:'';position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1525625293386-3f8f99389edd?w=1600&q=80') center/cover;opacity:.25}
+.hero-content{position:relative;z-index:2;color:#fff;padding:0 20px}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,3rem);font-weight:700;margin-bottom:10px;text-shadow:0 2px 20px rgba(0,0,0,.3)}
+.hero .sub{font-size:1rem;font-weight:300;opacity:.9;margin-bottom:16px}
+.hero .badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.rbadge{background:rgba(255,255,255,.2);backdrop-filter:blur(10px);padding:5px 14px;border-radius:20px;font-size:.82rem;font-weight:500;border:1px solid rgba(255,255,255,.3)}
+.budget-bar{background:linear-gradient(90deg,#059669,#10b981);color:#fff;text-align:center;padding:12px 20px;font-weight:500;font-size:.9rem}
+.budget-bar strong{font-size:1.1rem}
+.tab-nav{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid var(--bdr);display:flex;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.05);flex-wrap:wrap}
+.tab-btn{padding:14px 20px;border:none;background:none;font-family:inherit;font-size:.9rem;font-weight:500;color:var(--txt2);cursor:pointer;position:relative;transition:color .2s;display:flex;align-items:center;gap:6px}
+.tab-btn:hover{color:var(--pri)}
+.tab-btn.active{color:var(--pri);font-weight:600}
+.tab-btn.active::after{content:'';position:absolute;bottom:0;left:12px;right:12px;height:3px;background:var(--pri);border-radius:3px 3px 0 0}
+.tab-content{display:none}.tab-content.active{display:block}
+.container{max-width:960px;margin:0 auto;padding:0 20px}
+.day-section{margin:36px 0}
+.day-header{display:flex;align-items:center;gap:14px;margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid var(--bdr)}
+.day-num{width:52px;height:52px;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-weight:700;flex-shrink:0}
+.day-num .n{font-size:1.3rem;line-height:1}.day-num .l{font-size:.55rem;text-transform:uppercase;letter-spacing:1px}
+.day-header h2{font-family:'Playfair Display',serif;font-size:1.4rem}
+.day-header .date{font-size:.85rem;color:var(--txt2);font-weight:400}
+.c-sg .day-num{background:linear-gradient(135deg,var(--sg),#dc2626)}
+.c-mlk .day-num{background:linear-gradient(135deg,var(--mlk),#ea580c)}
+.c-kl .day-num{background:linear-gradient(135deg,var(--kl),#0891b2)}
+.c-home .day-num{background:linear-gradient(135deg,#6366f1,#4f46e5)}
+.agrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px;margin-bottom:20px}
+.acard{background:var(--card);border-radius:14px;overflow:hidden;box-shadow:var(--sh);transition:transform .2s,box-shadow .2s}
+.acard:hover{transform:translateY(-3px);box-shadow:var(--sh2)}
+.acard img{width:100%;height:170px;object-fit:cover}
+.acard .info{padding:14px}
+.acard h3{font-size:.95rem;margin-bottom:5px}
+.acard .desc{font-size:.82rem;color:var(--txt2);margin-bottom:8px}
+.acard .meta{display:flex;gap:10px;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;gap:4px;padding:3px 9px;border-radius:20px;font-size:.72rem;font-weight:600}
+.b-free{background:#dcfce7;color:#15803d}.b-paid{background:#fef3c7;color:#a16207}.b-time{background:#e0e7ff;color:#4338ca}
+.tl{position:relative;padding-left:30px}
+.tl::before{content:'';position:absolute;left:10px;top:8px;bottom:8px;width:2px;background:var(--bdr)}
+.tl-item{position:relative;padding-bottom:16px}
+.tl-item::before{content:'';position:absolute;left:-24px;top:5px;width:11px;height:11px;border-radius:50%;background:var(--pri);border:3px solid #fff;box-shadow:0 0 0 2px var(--pri)}
+.tl-item .time{font-size:.78rem;font-weight:600;color:var(--pri-dk);margin-bottom:3px}
+.tl-item .act{font-size:.9rem}
+.tl-item .note{font-size:.78rem;color:var(--txt2);margin-top:2px;font-style:italic}
+/* Booking card */
+.bkcard{background:linear-gradient(135deg,#eff6ff,#f0f9ff);border:1px solid #bfdbfe;border-radius:14px;padding:18px;margin:18px 0}
+.bkcard h4{font-size:.95rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.bkcard .bk-grid{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;font-size:.82rem;margin-bottom:12px}
+.bkcard .bk-grid dt{color:var(--txt2);font-weight:500}
+.bkcard .bk-grid dd{font-weight:600;margin:0}
+.bk-en{background:#f1f5f9;border:1px dashed #94a3b8;border-radius:10px;padding:14px;margin-top:10px;font-size:.82rem;font-family:'Inter',monospace}
+.bk-en h5{font-size:.8rem;color:var(--pri-dk);margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px}
+.bk-en p{margin-bottom:4px;line-height:1.5}
+.bk-en .conf{font-size:1rem;font-weight:700;color:var(--txt);letter-spacing:1px}
+/* Transport & Food */
+.tcard{background:linear-gradient(135deg,#faf5ff,#fdf4ff);border:1px solid #d8b4fe;border-radius:14px;padding:18px;margin:18px 0}
+.tcard h4{font-size:.95rem;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.tcard .det{font-size:.85rem;color:var(--txt2)}.tcard .det strong{color:var(--txt)}
+.fcard{background:linear-gradient(135deg,#fff7ed,#fffbeb);border:1px solid #fed7aa;border-radius:14px;padding:18px;margin:18px 0}
+.fcard h4{font-size:.95rem;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.flist{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:6px;list-style:none}
+.flist li{font-size:.82rem;padding:4px 0}.flist li strong{display:block}
+/* Flight card */
+.flcard{background:linear-gradient(135deg,#fdf2f8,#fce7f3);border:1px solid #f9a8d4;border-radius:14px;padding:18px;margin:18px 0}
+.flcard h4{font-size:.95rem;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.fl-route{display:flex;align-items:center;gap:12px;margin-bottom:8px;font-size:.9rem}
+.fl-route .fl-time{font-weight:700;font-size:1.1rem}
+.fl-route .fl-arrow{color:var(--txt2);font-size:1.2rem}
+.fl-route .fl-city{font-size:.82rem;color:var(--txt2)}
+.fl-details{font-size:.8rem;color:var(--txt2);display:flex;flex-wrap:wrap;gap:12px}
+.fl-details span{display:flex;align-items:center;gap:4px}
+/* Budget */
+.btable{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--sh)}
+.btable th,.btable td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--bdr);font-size:.85rem}
+.btable th{background:#f1f5f9;font-weight:600;font-size:.78rem;text-transform:uppercase;letter-spacing:.5px;color:var(--txt2)}
+.btable tr:last-child td{border-bottom:none}
+.btable .total{background:linear-gradient(90deg,#059669,#10b981);color:#fff;font-weight:700}
+.btable .total td{border-bottom:none;font-size:.95rem}
+/* Checklist */
+.ckgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.ckcard{background:#fff;border-radius:14px;padding:18px;box-shadow:var(--sh)}
+.ckcard h4{font-size:.95rem;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid var(--bdr);display:flex;align-items:center;gap:8px}
+.ckitem{display:flex;align-items:flex-start;gap:8px;padding:6px 0;border-bottom:1px solid #f1f5f9}
+.ckitem:last-child{border-bottom:none}
+.ckitem input[type=checkbox]{width:16px;height:16px;margin-top:2px;accent-color:var(--pri);flex-shrink:0;cursor:pointer}
+.ckitem label{font-size:.85rem;cursor:pointer}
+.ckitem label .hint{display:block;font-size:.74rem;color:var(--txt2);margin-top:1px}
+.ckitem input:checked+label{text-decoration:line-through;color:var(--txt2)}
+.tips{background:linear-gradient(135deg,#fefce8,#fef9c3);border:1px solid #fde047;border-radius:14px;padding:20px;margin:28px 0}
+.tips h3{font-size:1rem;margin-bottom:12px}
+.tips ul{list-style:none;display:grid;gap:6px}
+.tips li{font-size:.85rem;padding-left:22px;position:relative}
+.tips li::before{content:'\2714';position:absolute;left:0;color:var(--ok)}
+footer{background:#1e293b;color:#94a3b8;text-align:center;padding:24px 20px;margin-top:36px;font-size:.8rem}
+.pbar{display:flex;justify-content:center;align-items:center;gap:0;padding:20px 20px 0}
+.pstep{display:flex;flex-direction:column;align-items:center}
+.pdot{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;color:#fff;z-index:2}
+.plbl{font-size:.65rem;margin-top:5px;font-weight:500;text-align:center;color:var(--txt2)}
+.pline{width:80px;height:3px;flex-shrink:0;margin-top:-17px}
+@media(max-width:640px){.hero{height:300px}.hero h1{font-size:1.5rem}.agrid,.ckgrid{grid-template-columns:1fr}.tab-btn{padding:10px 12px;font-size:.82rem}.pline{width:40px}.btable th,.btable td{padding:7px 8px;font-size:.78rem}.bkcard .bk-grid{grid-template-columns:1fr}}
+@media print{.tab-nav,.hero{display:none}.tab-content{display:block!important}.bk-en{border-style:solid}}
+</style>
 </head>
 <body>
 
 <header class="hero">
     <div class="hero-content">
         <h1>Tour K&#7881; ni&#7879;m 15 n&#259;m ng&#224;y c&#432;&#7899;i Thanh Th&#7911;y</h1>
-        <p class="sub">27 Th&#225;ng 4 &#8212; 01 Th&#225;ng 5 &#8226; Gia &#273;&#236;nh Ch&#7891;n Bun</p>
-        <div class="badges">
-            <span class="rbadge">Singapore</span>
-            <span class="rbadge">&#8594; Malacca</span>
-            <span class="rbadge">&#8594; Kuala Lumpur</span>
-        </div>
+        <p class="sub">27 Th&#225;ng 4 &#8212; 01 Th&#225;ng 5, 2026 &#8226; Gia &#273;&#236;nh Ch&#7891;n Bun</p>
+        <div class="badges"><span class="rbadge">Singapore</span><span class="rbadge">&#8594; Malacca</span><span class="rbadge">&#8594; Kuala Lumpur</span></div>
     </div>
 </header>
 
-<div class="budget-bar">Ng&#226;n s&#225;ch d&#7921; ki&#7871;n: <strong>$450 &#8211; $650 USD</strong> &#160;|&#160; 4 &#273;&#234;m &#8226; 3 th&#224;nh ph&#7889; &#8226; Malacca &#8212; Di s&#7843;n UNESCO</div>
+<div class="budget-bar">H&#224;nh kh&#225;ch: <strong>Thanh, Th&#7911;y, Minh Tr&#237;, Tu&#7879; Anh</strong> &#160;|&#160; VJ-811 SGN&#8594;SIN &#160;|&#160; MH-766 KUL&#8594;SGN</div>
 
-<div class="container">
-    <div class="pbar">
-        <div class="pstep"><div class="pdot" style="background:var(--sg)">SG</div><span class="plbl">27-29/04</span></div>
-        <div class="pline" style="background:linear-gradient(90deg,var(--sg),var(--mlk))"></div>
-        <div class="pstep"><div class="pdot" style="background:var(--mlk)">MLK</div><span class="plbl">29-30/04</span></div>
-        <div class="pline" style="background:linear-gradient(90deg,var(--mlk),var(--kl))"></div>
-        <div class="pstep"><div class="pdot" style="background:var(--kl)">KL</div><span class="plbl">30/04-01/05</span></div>
-    </div>
-</div>
+<div class="container"><div class="pbar">
+    <div class="pstep"><div class="pdot" style="background:var(--sg)">SG</div><span class="plbl">27-29/04</span></div>
+    <div class="pline" style="background:linear-gradient(90deg,var(--sg),var(--mlk))"></div>
+    <div class="pstep"><div class="pdot" style="background:var(--mlk)">MLK</div><span class="plbl">29-30/04</span></div>
+    <div class="pline" style="background:linear-gradient(90deg,var(--mlk),var(--kl))"></div>
+    <div class="pstep"><div class="pdot" style="background:var(--kl)">KL</div><span class="plbl">30/04-01/05</span></div>
+</div></div>
 
 <nav class="tab-nav">
     <button class="tab-btn active" onclick="switchTab('itinerary',this)">&#128197; L&#7883;ch Tr&#236;nh</button>
+    <button class="tab-btn" onclick="switchTab('booking',this)">&#127976; Booking</button>
     <button class="tab-btn" onclick="switchTab('checklist',this)">&#9745; Checklist</button>
     <button class="tab-btn" onclick="switchTab('budget',this)">&#128176; Chi Ph&#237;</button>
 </nav>
 
-<!-- ========== TAB L&#7882;CH TR&#204;NH ========== -->
-<div id="tab-itinerary" class="tab-content active">
-<div class="container">
+<!-- ===== TAB L&#7882;CH TR&#204;NH ===== -->
+<div id="tab-itinerary" class="tab-content active"><div class="container">
 
 <!-- NG&#192;Y 1 -->
 <section class="day-section c-sg">
-    <div class="day-header">
-        <div class="day-num"><span class="n">1</span><span class="l">Ng&#224;y</span></div>
-        <div><h2>&#272;&#7871;n Singapore</h2><span class="date">Th&#7913; Hai, 27/04/2026 &#8226; Jewel Changi, Marina Bay, Merlion</span></div>
+    <div class="day-header"><div class="day-num"><span class="n">1</span><span class="l">Ng&#224;y</span></div><div><h2>&#272;&#7871;n Singapore</h2><span class="date">Th&#7913; Hai, 27/04/2026</span></div></div>
+    <div class="flcard">
+        <h4>&#9992;&#65039; Chuy&#7871;n bay &#273;i: VietJet VJ-811</h4>
+        <div class="fl-route"><div><div class="fl-time">09:00</div><div class="fl-city">SGN &#8212; T&#226;n S&#417;n Nh&#7845;t, Nh&#224; ga 2</div></div><div class="fl-arrow">&#8594;</div><div><div class="fl-time">12:05</div><div class="fl-city">SIN &#8212; Changi, Nh&#224; ga 4</div></div></div>
+        <div class="fl-details"><span>PNR: <strong>VS8SRA</strong></span><span>Gh&#7871;: 28C, 28D, 28E, 28F</span><span>H&#224;nh l&#253;: 7kg x&#225;ch tay + 20kg k&#253; g&#7917;i/ng&#432;&#7901;i</span></div>
     </div>
     <div class="agrid">
-        <div class="acard"><img src="https://images.unsplash.com/photo-1569288063643-5d29ad64df09?w=600&q=80" alt="Jewel Changi Airport" loading="lazy"><div class="info"><h3>Jewel Changi Airport</h3><p class="desc">Th&#225;c n&#432;&#7899;c trong nh&#224; cao nh&#7845;t th&#7871; gi&#7899;i 40m (Rain Vortex), v&#432;&#7901;n c&#226;y 5 t&#7847;ng Forest Valley</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">1.5-2 ti&#7871;ng</span></div></div></div>
-        <div class="acard"><img src="https://images.unsplash.com/photo-1496939376851-89342e90adcd?w=600&q=80" alt="Merlion Park" loading="lazy"><div class="info"><h3>Merlion Park &amp; Marina Bay</h3><p class="desc">Bi&#7875;u t&#432;&#7907;ng Singapore, ng&#7855;m Marina Bay Sands tuy&#7879;t &#273;&#7865;p v&#7873; &#273;&#234;m</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">1-1.5 ti&#7871;ng</span></div></div></div>
-        <div class="acard"><img src="https://images.unsplash.com/photo-1506351421178-63b52a2d2562?w=600&q=80" alt="Gardens by the Bay" loading="lazy"><div class="info"><h3>Gardens by the Bay &#8211; Light Show</h3><p class="desc">Si&#234;u c&#226;y Supertree Grove, show &#225;nh s&#225;ng Garden Rhapsody mi&#7877;n ph&#237;</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">19:45 &amp; 20:45</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1569288063643-5d29ad64df09?w=600&q=80" alt="Jewel Changi" loading="lazy"><div class="info"><h3>Jewel Changi Airport</h3><p class="desc">Th&#225;c n&#432;&#7899;c Rain Vortex 40m, v&#432;&#7901;n c&#226;y Forest Valley</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">1.5-2h</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1496939376851-89342e90adcd?w=600&q=80" alt="Merlion" loading="lazy"><div class="info"><h3>Merlion Park &amp; Marina Bay</h3><p class="desc">Bi&#7875;u t&#432;&#7907;ng SG, ng&#7855;m Marina Bay Sands v&#7873; &#273;&#234;m</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">1-1.5h</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1506351421178-63b52a2d2562?w=600&q=80" alt="Gardens by the Bay" loading="lazy"><div class="info"><h3>Gardens by the Bay &#8211; Light Show</h3><p class="desc">Supertree Grove, show Garden Rhapsody mi&#7877;n ph&#237;</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">19:45</span></div></div></div>
     </div>
     <div class="tl">
-        <div class="tl-item"><div class="time">12:00</div><div class="act">&#272;&#225;p xu&#7889;ng s&#226;n bay Changi</div></div>
-        <div class="tl-item"><div class="time">12:30 - 14:30</div><div class="act">Kh&#225;m ph&#225; Jewel Changi &#8212; Rain Vortex, Forest Valley</div><div class="note">Ngay t&#7841;i s&#226;n bay, kh&#244;ng c&#7847;n &#273;i &#273;&#226;u xa</div></div>
-        <div class="tl-item"><div class="time">15:00</div><div class="act">MRT v&#7873; kh&#225;ch s&#7841;n, nh&#7853;n ph&#242;ng, ngh&#7881; ng&#417;i</div></div>
-        <div class="tl-item"><div class="time">17:00 - 18:30</div><div class="act">Marina Bay &#8212; &#273;i b&#7897; d&#7885;c v&#7883;nh, ch&#7909;p &#7843;nh Merlion Park</div></div>
-        <div class="tl-item"><div class="time">18:30</div><div class="act">T&#7843;n b&#7897; qua Gardens by the Bay &#8212; Supertree Grove</div></div>
-        <div class="tl-item"><div class="time">19:00</div><div class="act">&#258;n t&#7889;i t&#7841;i Lau Pa Sat Hawker Centre &#8212; Satay Street</div><div class="note">M&#7903; t&#7915; 19h, satay n&#432;&#7899;ng t&#7841;i b&#224;n, ~SGD 8-12/ng&#432;&#7901;i</div></div>
-        <div class="tl-item"><div class="time">19:45</div><div class="act">Garden Rhapsody Light Show t&#7841;i Supertree Grove</div><div class="note">Show &#225;nh s&#225;ng mi&#7877;n ph&#237;, r&#7845;t &#7845;n t&#432;&#7907;ng!</div></div>
+        <div class="tl-item"><div class="time">12:05</div><div class="act">&#272;&#225;p xu&#7889;ng Changi T4</div></div>
+        <div class="tl-item"><div class="time">12:30 - 14:30</div><div class="act">Kh&#225;m ph&#225; Jewel Changi &#8212; Rain Vortex, Forest Valley</div></div>
+        <div class="tl-item"><div class="time">15:00</div><div class="act">MRT v&#7873; ibis budget Bugis, nh&#7853;n ph&#242;ng (t&#7915; 15:00)</div></div>
+        <div class="tl-item"><div class="time">17:00 - 18:30</div><div class="act">Marina Bay &#8212; Merlion Park, &#273;i b&#7897; d&#7885;c v&#7883;nh</div></div>
+        <div class="tl-item"><div class="time">18:30</div><div class="act">Gardens by the Bay &#8212; Supertree Grove</div></div>
+        <div class="tl-item"><div class="time">19:00</div><div class="act">&#258;n t&#7889;i Lau Pa Sat &#8212; Satay Street</div><div class="note">SGD 8-12/ng&#432;&#7901;i, satay n&#432;&#7899;ng t&#7841;i b&#224;n</div></div>
+        <div class="tl-item"><div class="time">19:45</div><div class="act">Garden Rhapsody Light Show</div></div>
     </div>
-    <div class="fcard"><h4>&#127858; &#258;n g&#236; h&#244;m nay?</h4><ul class="flist"><li><strong>Lau Pa Sat</strong> Satay n&#432;&#7899;ng, Char Kuey Teow</li><li><strong>Jewel Changi</strong> Food court t&#7847;ng B2</li></ul></div>
-    <div class="hcard">
-        <h4>&#127976; Kh&#225;ch s&#7841;n Singapore (2 &#273;&#234;m: 27-28/04)</h4>
-        <ul class="hlist">
-            <li class="hitem"><div><span class="nm">Hotel 81 Bugis</span><span class="pr"> &#8212; ~$50-60/&#273;&#234;m</span></div><a href="https://www.booking.com/searchresults.html?ss=Hotel+81+Bugis+Singapore&checkin=2026-04-27&checkout=2026-04-29&group_adults=2&group_children=2" target="_blank" rel="noopener">&#272;&#7863;t ph&#242;ng &#8599;</a></li>
-            <li class="hitem"><div><span class="nm">ibis budget Singapore Bugis</span><span class="pr"> &#8212; ~$65-75/&#273;&#234;m</span></div><a href="https://www.booking.com/searchresults.html?ss=ibis+budget+Singapore+Bugis&checkin=2026-04-27&checkout=2026-04-29&group_adults=2&group_children=2" target="_blank" rel="noopener">&#272;&#7863;t ph&#242;ng &#8599;</a></li>
-            <li class="hitem"><div><span class="nm">Hotel 81 Palace</span><span class="pr"> &#8212; ~$50-60/&#273;&#234;m</span></div><a href="https://www.booking.com/searchresults.html?ss=Hotel+81+Palace+Singapore&checkin=2026-04-27&checkout=2026-04-29&group_adults=2&group_children=2" target="_blank" rel="noopener">&#272;&#7863;t ph&#242;ng &#8599;</a></li>
-        </ul>
+    <div class="bkcard">
+        <h4>&#127976; ibis budget Singapore Bugis (2 &#273;&#234;m: 27-29/04)</h4>
+        <dl class="bk-grid">
+            <dt>&#272;&#7883;a ch&#7881;</dt><dd>33 Middle Road, Singapore 188942</dd>
+            <dt>&#272;i&#7879;n tho&#7841;i</dt><dd>+65 6345 6116</dd>
+            <dt>Nh&#7853;n ph&#242;ng</dt><dd>27/04 t&#7915; 15:00</dd>
+            <dt>Tr&#7843; ph&#242;ng</dt><dd>29/04 tr&#432;&#7899;c 12:00</dd>
+            <dt>Ph&#242;ng</dt><dd>2 ph&#242;ng (1 Double + 1 Superior Twin)</dd>
+            <dt>T&#7893;ng gi&#225;</dt><dd>VND 10.467.801 (~S$510)</dd>
+        </dl>
+        <div class="bk-en">
+            <h5>&#127468;&#127463; Show this to reception / &#272;&#432;a cho l&#7877; t&#226;n</h5>
+            <p>Hello, I have a reservation under the name <strong>Vu Van Thanh</strong>.</p>
+            <p>Booking Confirmation: <span class="conf">6797.058.688</span> &nbsp; PIN: <strong>3373</strong></p>
+            <p>Check-in: <strong>27 April 2026</strong> &nbsp;|&nbsp; Check-out: <strong>29 April 2026</strong></p>
+            <p>2 rooms for 2 nights &#8212; 2 adults (Vu Van Thanh &amp; Thai Thi Thuy), 1 son (14 years old), 1 daughter (12 years old)</p>
+            <p>Room 1: Standard Double Room (Vu Van Thanh) &nbsp;|&nbsp; Room 2: Superior Twin Room (Van Thanh Vu)</p>
+            <p>Special request: Rooms close together, please.</p>
+        </div>
     </div>
 </section>
 
 <!-- NG&#192;Y 2 -->
 <section class="day-section c-sg">
-    <div class="day-header">
-        <div class="day-num"><span class="n">2</span><span class="l">Ng&#224;y</span></div>
-        <div><h2>Kh&#225;m Ph&#225; Singapore</h2><span class="date">Th&#7913; Ba, 28/04/2026 &#8226; Sentosa, Chinatown, Little India</span></div>
-    </div>
+    <div class="day-header"><div class="day-num"><span class="n">2</span><span class="l">Ng&#224;y</span></div><div><h2>Kh&#225;m Ph&#225; Singapore</h2><span class="date">Th&#7913; Ba, 28/04/2026</span></div></div>
     <div class="agrid">
-        <div class="acard"><img src="https://images.unsplash.com/photo-1565967511849-76a60a516170?w=600&q=80" alt="Chinatown Singapore" loading="lazy"><div class="info"><h3>Chinatown Singapore</h3><p class="desc">Ch&#249;a R&#259;ng Ph&#7853;t, ph&#7889; c&#7893;, hawker centre 260 qu&#7847;y r&#7867; nh&#7845;t Singapore</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">1.5 ti&#7871;ng</span></div></div></div>
-        <div class="acard"><img src="https://images.unsplash.com/photo-1584467735871-8e85353a8413?w=600&q=80" alt="Little India Singapore" loading="lazy"><div class="info"><h3>Little India &amp; Kampong Glam</h3><p class="desc">&#272;&#7873;n Hindu Sri Veeramakaliamman, tranh t&#432;&#7901;ng Haji Lane, nh&#224; th&#7901; H&#7891;i gi&#225;o Sultan</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">1.5 ti&#7871;ng</span></div></div></div>
-        <div class="acard"><img src="https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=600&q=80" alt="&#272;&#7843;o Sentosa" loading="lazy"><div class="info"><h3>&#272;&#7843;o Sentosa</h3><p class="desc">B&#227;i bi&#7875;n Palawan &amp; Siloso mi&#7877;n ph&#237;, Fort Siloso, Skywalk, c&#225;p treo</p><div class="meta"><span class="badge b-free">B&#227;i bi&#7875;n MI&#7876;N PH&#205;</span><span class="badge b-time">3-4 ti&#7871;ng</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1565967511849-76a60a516170?w=600&q=80" alt="Chinatown" loading="lazy"><div class="info"><h3>Chinatown Singapore</h3><p class="desc">Ch&#249;a R&#259;ng Ph&#7853;t, ph&#7889; c&#7893;, hawker 260 qu&#7847;y</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">1.5h</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1584467735871-8e85353a8413?w=600&q=80" alt="Little India" loading="lazy"><div class="info"><h3>Little India &amp; Kampong Glam</h3><p class="desc">&#272;&#7873;n Hindu, tranh t&#432;&#7901;ng Haji Lane, nh&#224; th&#7901; Sultan</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">1.5h</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1555899434-94d1368aa7af?w=600&q=80" alt="Sentosa" loading="lazy"><div class="info"><h3>&#272;&#7843;o Sentosa</h3><p class="desc">B&#227;i bi&#7875;n Palawan, Fort Siloso, Skywalk mi&#7877;n ph&#237;</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">3-4h</span></div></div></div>
     </div>
     <div class="tl">
-        <div class="tl-item"><div class="time">08:00</div><div class="act">&#258;n s&#225;ng t&#7841;i Maxwell Food Centre &#8212; C&#417;m g&#224; Hainam</div></div>
-        <div class="tl-item"><div class="time">09:00 - 10:30</div><div class="act">Chinatown &#8212; Ch&#249;a R&#259;ng Ph&#7853;t, ph&#7889; c&#7893;, mua s&#7855;m</div></div>
-        <div class="tl-item"><div class="time">10:30 - 12:00</div><div class="act">Little India + Kampong Glam &#8212; &#273;&#7873;n Hindu, tranh t&#432;&#7901;ng Haji Lane</div></div>
-        <div class="tl-item"><div class="time">12:00</div><div class="act">&#258;n tr&#432;a t&#7841;i Chinatown Complex Food Centre</div><div class="note">~260 qu&#7847;y &#259;n, r&#7867; nh&#7845;t Singapore, SGD 3-6/m&#243;n</div></div>
-        <div class="tl-item"><div class="time">13:30 - 17:00</div><div class="act">&#272;&#7843;o Sentosa &#8212; Boardwalk, Fort Siloso, t&#7855;m bi&#7875;n Palawan Beach</div><div class="note">Boardwalk, Fort Siloso, Skywalk mi&#7877;n ph&#237;. T&#249;y ch&#7885;n: C&#225;p treo SGD 29/NL, SGD 18/TE</div></div>
-        <div class="tl-item"><div class="time">17:30</div><div class="act">V&#7873; &#273;&#7845;t li&#7873;n, gh&#233; Chinatown mua &#273;&#7891; l&#432;u ni&#7879;m</div></div>
-        <div class="tl-item"><div class="time">19:00</div><div class="act">&#258;n t&#7889;i t&#7841;i hawker centre</div></div>
-        <div class="tl-item"><div class="time">19:45</div><div class="act">Gardens by the Bay &#8212; Garden Rhapsody Light Show</div></div>
+        <div class="tl-item"><div class="time">08:00</div><div class="act">&#258;n s&#225;ng Maxwell Food Centre &#8212; C&#417;m g&#224; Hainam</div></div>
+        <div class="tl-item"><div class="time">09:00 - 10:30</div><div class="act">Chinatown &#8212; Ch&#249;a R&#259;ng Ph&#7853;t, mua s&#7855;m</div></div>
+        <div class="tl-item"><div class="time">10:30 - 12:00</div><div class="act">Little India + Kampong Glam &#8212; Haji Lane</div></div>
+        <div class="tl-item"><div class="time">12:00</div><div class="act">&#258;n tr&#432;a Chinatown Complex (260 qu&#7847;y, SGD 3-6/m&#243;n)</div></div>
+        <div class="tl-item"><div class="time">13:30 - 17:00</div><div class="act">Sentosa &#8212; Boardwalk, Fort Siloso, t&#7855;m bi&#7875;n Palawan</div></div>
+        <div class="tl-item"><div class="time">17:30</div><div class="act">V&#7873; &#273;&#7845;t li&#7873;n, mua &#273;&#7891; l&#432;u ni&#7879;m Chinatown</div></div>
+        <div class="tl-item"><div class="time">19:00</div><div class="act">&#258;n t&#7889;i hawker centre</div></div>
+        <div class="tl-item"><div class="time">19:45</div><div class="act">Gardens by the Bay &#8212; Light Show</div></div>
     </div>
-    <div class="fcard"><h4>&#127858; &#258;n g&#236; h&#244;m nay?</h4><ul class="flist"><li><strong>Maxwell Food Centre</strong> C&#417;m g&#224; Tian Tian n&#7893;i ti&#7871;ng</li><li><strong>Chinatown Complex</strong> 260 qu&#7847;y, r&#7867; nh&#7845;t SG</li></ul></div>
 </section>
 
 <!-- NG&#192;Y 3 -->
 <section class="day-section c-mlk">
-    <div class="day-header">
-        <div class="day-num"><span class="n">3</span><span class="l">Ng&#224;y</span></div>
-        <div><h2>Singapore &#8594; Malacca</h2><span class="date">Th&#7913; T&#432;, 29/04/2026 &#8226; Th&#224;nh ph&#7889; Di s&#7843;n UNESCO</span></div>
-    </div>
+    <div class="day-header"><div class="day-num"><span class="n">3</span><span class="l">Ng&#224;y</span></div><div><h2>Singapore &#8594; Malacca</h2><span class="date">Th&#7913; T&#432;, 29/04/2026 &#8226; Th&#224;nh ph&#7889; Di s&#7843;n UNESCO</span></div></div>
     <div class="agrid">
-        <div class="acard"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80" alt="Qu&#7843;ng tr&#432;&#7901;ng H&#224; Lan Malacca" loading="lazy"><div class="info"><h3>Qu&#7843;ng tr&#432;&#7901;ng H&#224; Lan (Dutch Square)</h3><p class="desc">Nh&#224; th&#7901; Christ Church &#273;&#7887; r&#7921;c, t&#242;a nh&#224; Stadthuys &#8212; c&#7893; nh&#7845;t &#272;&#244;ng Nam &#193; (1641)</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">1 ti&#7871;ng</span></div></div></div>
-        <div class="acard"><img src="https://images.unsplash.com/photo-1609946860441-a51ffcf22208?w=600&q=80" alt="Ph&#225;o &#273;&#224;i A Famosa" loading="lazy"><div class="info"><h3>Ph&#225;o &#273;&#224;i A Famosa &amp; Nh&#224; th&#7901; St. Paul</h3><p class="desc">Ph&#225;o &#273;&#224;i B&#7891; &#272;&#224;o Nha 1511 &#8212; c&#244;ng tr&#236;nh ch&#226;u &#194;u c&#7893; nh&#7845;t &#272;&#244;ng Nam &#193;</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">45 ph&#250;t</span></div></div></div>
-        <div class="acard"><img src="https://images.unsplash.com/photo-1600002415506-dd06090d3480?w=600&q=80" alt="Ph&#7889; c&#7893; Jonker" loading="lazy"><div class="info"><h3>Ph&#7889; c&#7893; Jonker Street</h3><p class="desc">Ph&#7889; c&#7893; l&#7883;ch s&#7917;, &#273;&#7891; &#259;n &#273;&#432;&#7901;ng ph&#7889;: C&#417;m g&#224; vi&#234;n, Cendol, Satay Celup</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205; v&#224;o</span><span class="badge b-time">2+ ti&#7871;ng</span></div></div></div>
-        <div class="acard"><img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?w=600&q=80" alt="Du thuy&#7873;n s&#244;ng Melaka" loading="lazy"><div class="info"><h3>Du thuy&#7873;n s&#244;ng Melaka</h3><p class="desc">45 ph&#250;t ng&#7855;m tranh t&#432;&#7901;ng v&#224; ki&#7871;n tr&#250;c c&#7893; d&#7885;c hai b&#7901; s&#244;ng</p><div class="meta"><span class="badge b-paid">~RM 35/ng&#432;&#7901;i</span><span class="badge b-time">45 ph&#250;t</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=600&q=80" alt="Dutch Square" loading="lazy"><div class="info"><h3>Qu&#7843;ng tr&#432;&#7901;ng H&#224; Lan</h3><p class="desc">Christ Church &#273;&#7887; r&#7921;c, Stadthuys c&#7893; nh&#7845;t &#272;NA (1641)</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">1h</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1609946860441-a51ffcf22208?w=600&q=80" alt="A Famosa" loading="lazy"><div class="info"><h3>Ph&#225;o &#273;&#224;i A Famosa</h3><p class="desc">Ph&#225;o &#273;&#224;i B&#7891; &#272;&#224;o Nha 1511, c&#7893;ng Porta de Santiago</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">45p</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1600002415506-dd06090d3480?w=600&q=80" alt="Jonker Street" loading="lazy"><div class="info"><h3>Ph&#7889; c&#7893; Jonker Street</h3><p class="desc">C&#417;m g&#224; vi&#234;n, Satay Celup, Cendol, Nyonya Laksa</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">2h+</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0648?w=600&q=80" alt="River Cruise" loading="lazy"><div class="info"><h3>Du thuy&#7873;n s&#244;ng Melaka</h3><p class="desc">45 ph&#250;t ng&#7855;m tranh t&#432;&#7901;ng, ki&#7871;n tr&#250;c c&#7893;</p><div class="meta"><span class="badge b-paid">~RM 35</span><span class="badge b-time">45p</span></div></div></div>
     </div>
     <div class="tcard">
-        <h4>&#128652; Di chuy&#7875;n Singapore &#8594; Malacca</h4>
-        <p class="det"><strong>Xe bu&#253;t KKKL / 707 Inc / Starmart</strong> t&#7915; Queen Street / Golden Mile<br>Gi&#225;: <strong>SGD 20-35/ng&#432;&#7901;i</strong> (~$60-100 cho 4 ng&#432;&#7901;i)<br>Th&#7901;i gian: <strong>4-5 ti&#7871;ng</strong> (bao g&#7891;m qua c&#7917;a kh&#7849;u)<br>&#272;&#7863;t tr&#432;&#7899;c tr&#234;n <a href="https://www.redbus.sg/bus-tickets/singapore-to-malacca" target="_blank" rel="noopener" style="color:var(--mlk)">RedBus</a> ho&#7863;c <a href="https://www.easybook.com" target="_blank" rel="noopener" style="color:var(--mlk)">Easybook</a></p>
+        <h4>&#128652; Xe bu&#253;t Singapore &#8594; Malacca</h4>
+        <p class="det"><strong>KKKL / 707 Inc / Starmart</strong> t&#7915; Queen Street / Golden Mile<br>Gi&#225;: <strong>SGD 20-35/ng&#432;&#7901;i</strong> | Th&#7901;i gian: <strong>4-5 ti&#7871;ng</strong> (qua c&#7917;a kh&#7849;u Woodlands/JB)<br>&#272;&#7863;t tr&#432;&#7899;c: <a href="https://www.redbus.sg/bus-tickets/singapore-to-malacca" target="_blank" rel="noopener" style="color:var(--mlk)">RedBus</a> | <a href="https://www.easybook.com" target="_blank" rel="noopener" style="color:var(--mlk)">Easybook</a></p>
     </div>
     <div class="tl">
-        <div class="tl-item"><div class="time">07:30</div><div class="act">&#258;n s&#225;ng, tr&#7843; ph&#242;ng kh&#225;ch s&#7841;n Singapore</div></div>
-        <div class="tl-item"><div class="time">08:30</div><div class="act">&#272;&#7871;n Queen Street / Golden Mile, mua &#273;&#7891; &#259;n nh&#7865; l&#234;n xe</div></div>
-        <div class="tl-item"><div class="time">09:00 - 13:30</div><div class="act">Xe bu&#253;t SG &#8594; Malacca (qua c&#7917;a kh&#7849;u Woodlands/JB)</div><div class="note">Xu&#7889;ng xe qua c&#7917;a kh&#7849;u SG v&#224; MY, r&#7891;i l&#234;n xe l&#7841;i. Mang theo h&#7897; chi&#7871;u s&#7861;n!</div></div>
-        <div class="tl-item"><div class="time">14:00</div><div class="act">&#272;&#7871;n Melaka Sentral, Grab v&#7873; kh&#225;ch s&#7841;n, nh&#7853;n ph&#242;ng</div></div>
-        <div class="tl-item"><div class="time">14:30</div><div class="act">&#258;n tr&#432;a &#8212; C&#417;m g&#224; vi&#234;n (Chicken Rice Balls)</div><div class="note">&#272;&#7863;c s&#7843;n ch&#7881; c&#243; &#7903; Malacca! Th&#7917; t&#7841;i Famosa Chicken Rice Ball</div></div>
-        <div class="tl-item"><div class="time">15:30 - 16:30</div><div class="act">Qu&#7843;ng tr&#432;&#7901;ng H&#224; Lan &#8212; Christ Church, Stadthuys (1641)</div></div>
-        <div class="tl-item"><div class="time">16:30 - 17:00</div><div class="act">Ph&#225;o &#273;&#224;i A Famosa &#8212; c&#7893;ng Porta de Santiago</div></div>
-        <div class="tl-item"><div class="time">17:00 - 17:45</div><div class="act">Th&#225;p xoay Menara Taming Sari &#8212; xoay 360&#176;, cao 110m</div><div class="note">RM 20/ng&#432;&#7901;i l&#7899;n, RM 10/tr&#7867; em, 7 ph&#250;t xoay ng&#7855;m to&#224;n c&#7843;nh</div></div>
-        <div class="tl-item"><div class="time">18:00 - 18:45</div><div class="act">Du thuy&#7873;n s&#244;ng Melaka &#8212; 45 ph&#250;t ng&#7855;m c&#7843;nh ho&#224;ng h&#244;n</div><div class="note">RM 35/ng&#432;&#7901;i, &#273;&#7863;t online r&#7867; h&#417;n 20%</div></div>
-        <div class="tl-item"><div class="time">19:00</div><div class="act">&#258;n t&#7889;i t&#7841;i ph&#7889; c&#7893; Jonker &#8212; Satay Celup, Cendol, Nyonya Laksa</div><div class="note">Satay Celup: l&#7849;u s&#7889;t &#273;&#7853;u ph&#7897;ng, &#273;&#7863;c s&#7843;n ch&#7881; c&#243; &#7903; Malacca!</div></div>
+        <div class="tl-item"><div class="time">07:30</div><div class="act">&#258;n s&#225;ng, tr&#7843; ph&#242;ng ibis Bugis (tr&#432;&#7899;c 12:00)</div></div>
+        <div class="tl-item"><div class="time">08:30</div><div class="act">&#272;&#7871;n Queen Street / Golden Mile, mua &#273;&#7891; &#259;n nh&#7865;</div></div>
+        <div class="tl-item"><div class="time">09:00 - 13:30</div><div class="act">Xe bu&#253;t SG &#8594; Malacca (qua c&#7917;a kh&#7849;u Woodlands/JB)</div><div class="note">Xu&#7889;ng xe qua c&#7917;a kh&#7849;u SG v&#224; MY, mang h&#7897; chi&#7871;u s&#7861;n!</div></div>
+        <div class="tl-item"><div class="time">14:00</div><div class="act">&#272;&#7871;n Melaka Sentral, Grab v&#7873; Asteria Melaka (nh&#7853;n ph&#242;ng t&#7915; 15:00)</div></div>
+        <div class="tl-item"><div class="time">14:30</div><div class="act">&#258;n tr&#432;a &#8212; C&#417;m g&#224; vi&#234;n (Chicken Rice Balls)</div><div class="note">&#272;&#7863;c s&#7843;n ch&#7881; c&#243; &#7903; Malacca!</div></div>
+        <div class="tl-item"><div class="time">15:30 - 16:30</div><div class="act">Qu&#7843;ng tr&#432;&#7901;ng H&#224; Lan + Ph&#225;o &#273;&#224;i A Famosa</div></div>
+        <div class="tl-item"><div class="time">17:00</div><div class="act">Th&#225;p xoay Menara Taming Sari (RM 20/NL, RM 10/TE)</div></div>
+        <div class="tl-item"><div class="time">18:00</div><div class="act">Du thuy&#7873;n s&#244;ng Melaka 45 ph&#250;t (RM 35/ng&#432;&#7901;i)</div></div>
+        <div class="tl-item"><div class="time">19:00</div><div class="act">&#258;n t&#7889;i Jonker Street &#8212; Satay Celup, Cendol, Nyonya Laksa</div></div>
     </div>
-    <div class="fcard"><h4>&#127858; &#272;&#7863;c s&#7843;n Malacca kh&#244;ng th&#7875; b&#7887; qua</h4><ul class="flist"><li><strong>C&#417;m g&#224; vi&#234;n</strong> C&#417;m g&#224; v&#242; tr&#242;n, &#273;&#7863;c s&#7843;n s&#7889; 1</li><li><strong>Satay Celup</strong> L&#7849;u s&#7889;t &#273;&#7853;u ph&#7897;ng ki&#7875;u Malay</li><li><strong>Cendol</strong> Ch&#232; &#273;&#225; b&#224;o &#273;&#432;&#7901;ng th&#7889;t n&#7889;t</li><li><strong>Nyonya Laksa</strong> M&#236; n&#432;&#7899;c d&#7915;a cay Peranakan</li></ul></div>
-    <div class="hcard">
-        <h4>&#127976; Kh&#225;ch s&#7841;n Malacca (1 &#273;&#234;m: 29/04) &#8212; R&#7867; nh&#7845;t c&#7843; chuy&#7871;n!</h4>
-        <ul class="hlist">
-            <li class="hitem"><div><span class="nm">Hotel Hong @ Jonker Street</span><span class="pr"> &#8212; ~$15-25/&#273;&#234;m</span></div><a href="https://www.booking.com/searchresults.html?ss=Hotel+Hong+Jonker+Street+Melaka&checkin=2026-04-29&checkout=2026-04-30&group_adults=2&group_children=2" target="_blank" rel="noopener">&#272;&#7863;t ph&#242;ng &#8599;</a></li>
-            <li class="hitem"><div><span class="nm">Swing &amp; Pillows Jonker Street</span><span class="pr"> &#8212; ~$20-30/&#273;&#234;m</span></div><a href="https://www.booking.com/searchresults.html?ss=Swing+Pillows+Jonker+Street+Melaka&checkin=2026-04-29&checkout=2026-04-30&group_adults=2&group_children=2" target="_blank" rel="noopener">&#272;&#7863;t ph&#242;ng &#8599;</a></li>
-            <li class="hitem"><div><span class="nm">GOOD 2 STAY HOTEL</span><span class="pr"> &#8212; ~$15-20/&#273;&#234;m</span></div><a href="https://www.booking.com/searchresults.html?ss=Good+2+Stay+Hotel+Melaka&checkin=2026-04-29&checkout=2026-04-30&group_adults=2&group_children=2" target="_blank" rel="noopener">&#272;&#7863;t ph&#242;ng &#8599;</a></li>
-        </ul>
+    <div class="bkcard">
+        <h4>&#127976; Asteria Melaka by Attic Suite (1 &#273;&#234;m: 29-30/04)</h4>
+        <dl class="bk-grid">
+            <dt>&#272;&#7883;a ch&#7881;</dt><dd>Jalan KSB 11A, Asteria Melaka, 75200</dd>
+            <dt>&#272;i&#7879;n tho&#7841;i</dt><dd>+60 19 635 7678</dd>
+            <dt>Nh&#7853;n ph&#242;ng</dt><dd>29/04, 15:00 - 00:00</dd>
+            <dt>Tr&#7843; ph&#242;ng</dt><dd>30/04, 08:00 - 12:00</dd>
+            <dt>Ph&#242;ng</dt><dd>Superior Twin 2 Queen, ban c&#244;ng, view th&#224;nh ph&#7889;</dd>
+            <dt>T&#7893;ng gi&#225;</dt><dd>VND 1.970.128 (~MYR 301)</dd>
+        </dl>
+        <p style="font-size:.8rem;color:var(--mlk);margin-bottom:8px">&#9888; C&#7847;n &#273;&#7863;t c&#7885;c MYR 100 ti&#7873;n m&#7863;t (ho&#224;n l&#7841;i khi tr&#7843; ph&#242;ng). &#272;&#7853;u xe mi&#7877;n ph&#237;.</p>
+        <div class="bk-en">
+            <h5>&#127468;&#127463; Show this to reception</h5>
+            <p>Hello, I have a reservation under the name <strong>Van Thanh Vu</strong>.</p>
+            <p>Booking Confirmation: <span class="conf">6661.226.143</span> &nbsp; PIN: <strong>1940</strong></p>
+            <p>Check-in: <strong>29 April 2026</strong> &nbsp;|&nbsp; Check-out: <strong>30 April 2026</strong></p>
+            <p>1 apartment, 1 night &#8212; Superior Twin with balcony, 2 Queen beds, City View</p>
+            <p>Guests: 2 adults + 2 children (son 14 years old, daughter 11 years old)</p>
+            <p>I will pay the MYR 100 damage deposit in cash now.</p>
+        </div>
     </div>
 </section>
 
 <!-- NG&#192;Y 4 -->
 <section class="day-section c-kl">
-    <div class="day-header">
-        <div class="day-num"><span class="n">4</span><span class="l">Ng&#224;y</span></div>
-        <div><h2>Malacca &#8594; Kuala Lumpur</h2><span class="date">Th&#7913; N&#259;m, 30/04/2026 &#8226; KLCC, Petronas, Jalan Alor</span></div>
-    </div>
+    <div class="day-header"><div class="day-num"><span class="n">4</span><span class="l">Ng&#224;y</span></div><div><h2>Malacca &#8594; Kuala Lumpur</h2><span class="date">Th&#7913; N&#259;m, 30/04/2026</span></div></div>
     <div class="agrid">
-        <div class="acard"><img src="https://images.unsplash.com/photo-1508062878650-88b52897f298?w=600&q=80" alt="Th&#225;p &#273;&#244;i Petronas" loading="lazy"><div class="info"><h3>Th&#225;p &#273;&#244;i Petronas &amp; KLCC</h3><p class="desc">Th&#225;p &#273;&#244;i cao nh&#7845;t th&#7871; gi&#7899;i (451.9m), c&#244;ng vi&#234;n KLCC, s&#226;n ch&#417;i tr&#7867; em</p><div class="meta"><span class="badge b-free">Ch&#7909;p &#7843;nh MI&#7876;N PH&#205;</span><span class="badge b-time">2 ti&#7871;ng</span></div></div></div>
-        <div class="acard"><img src="https://images.unsplash.com/photo-1562016600-ece13e8ba570?w=600&q=80" alt="Ph&#7889; T&#224;u KL" loading="lazy"><div class="info"><h3>Petaling Street / Ph&#7889; T&#224;u KL</h3><p class="desc">Khu ph&#7889; T&#224;u s&#244;i &#273;&#7897;ng, &#273;&#7891; &#259;n &#273;&#432;&#7901;ng ph&#7889;, mua s&#7855;m gi&#225; r&#7867;</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">1-1.5 ti&#7871;ng</span></div></div></div>
-        <div class="acard"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" alt="Ch&#7907; &#273;&#234;m Jalan Alor" loading="lazy"><div class="info"><h3>Ch&#7907; &#273;&#234;m Jalan Alor</h3><p class="desc">Thi&#234;n &#273;&#432;&#7901;ng &#273;&#7891; &#259;n &#273;&#432;&#7901;ng ph&#7889; KL! ~200 qu&#7847;y, satay, dim sum</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205; v&#224;o</span><span class="badge b-time">T&#7915; 18h</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1508062878650-88b52897f298?w=600&q=80" alt="Petronas" loading="lazy"><div class="info"><h3>Th&#225;p &#273;&#244;i Petronas &amp; KLCC</h3><p class="desc">Th&#225;p &#273;&#244;i 451.9m, c&#244;ng vi&#234;n KLCC, s&#226;n ch&#417;i tr&#7867; em</p><div class="meta"><span class="badge b-free">Ch&#7909;p &#7843;nh FREE</span><span class="badge b-time">2h</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1562016600-ece13e8ba570?w=600&q=80" alt="Petaling St" loading="lazy"><div class="info"><h3>Petaling Street / Ph&#7889; T&#224;u</h3><p class="desc">&#272;&#7891; &#259;n &#273;&#432;&#7901;ng ph&#7889;, mua s&#7855;m gi&#225; r&#7867;</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">1.5h</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" alt="Jalan Alor" loading="lazy"><div class="info"><h3>Ch&#7907; &#273;&#234;m Jalan Alor</h3><p class="desc">~200 qu&#7847;y, satay, dim sum, n&#432;&#7899;c d&#7915;a t&#432;&#417;i</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">T&#7915; 18h</span></div></div></div>
     </div>
     <div class="tcard">
-        <h4>&#128652; Di chuy&#7875;n Malacca &#8594; KL</h4>
-        <p class="det"><strong>Xe bu&#253;t Transnasional / Plusliner</strong> t&#7915; Melaka Sentral &#8594; TBS Terminal<br>Gi&#225;: <strong>RM 10-15/ng&#432;&#7901;i</strong> (~$10-14 cho 4 ng&#432;&#7901;i) &#8212; R&#7845;t r&#7867;!<br>Th&#7901;i gian: <strong>2-2.5 ti&#7871;ng</strong><br>Xe ch&#7841;y <strong>m&#7895;i 30 ph&#250;t</strong>, kh&#244;ng c&#7847;n &#273;&#7863;t tr&#432;&#7899;c</p>
+        <h4>&#128652; Xe bu&#253;t Malacca &#8594; KL</h4>
+        <p class="det"><strong>Transnasional / Plusliner</strong> &#8212; Melaka Sentral &#8594; TBS Terminal<br>Gi&#225;: <strong>RM 10-15/ng&#432;&#7901;i</strong> | Th&#7901;i gian: <strong>2-2.5h</strong> | Xe ch&#7841;y m&#7895;i 30 ph&#250;t</p>
     </div>
     <div class="tl">
-        <div class="tl-item"><div class="time">07:30</div><div class="act">&#258;n s&#225;ng, tr&#7843; ph&#242;ng Malacca</div></div>
-        <div class="tl-item"><div class="time">08:30 - 10:30</div><div class="act">D&#7841;o ph&#7889; bu&#7893;i s&#225;ng &#8212; Nh&#224; th&#7901; St. Paul, mua &#273;&#7863;c s&#7843;n Malacca</div><div class="note">Mua b&#225;nh d&#7913;a pineapple tart, k&#7865;o dodol mang v&#7873;</div></div>
-        <div class="tl-item"><div class="time">11:00 - 13:30</div><div class="act">Xe bu&#253;t t&#7915; Melaka Sentral &#273;&#7871;n TBS Terminal (KL)</div></div>
-        <div class="tl-item"><div class="time">14:00</div><div class="act">Nh&#7853;n ph&#242;ng kh&#225;ch s&#7841;n Bukit Bintang</div></div>
-        <div class="tl-item"><div class="time">14:30 - 15:30</div><div class="act">&#258;n tr&#432;a t&#7841;i Petaling Street / Ph&#7889; T&#224;u KL</div></div>
-        <div class="tl-item"><div class="time">16:00 - 18:00</div><div class="act">KLCC &#8212; Th&#225;p &#273;&#244;i Petronas, c&#244;ng vi&#234;n KLCC, Suria KLCC</div><div class="note">Ch&#7909;p &#7843;nh Petronas b&#234;n ngo&#224;i mi&#7877;n ph&#237;, c&#244;ng vi&#234;n c&#243; s&#226;n ch&#417;i tr&#7867; em</div></div>
-        <div class="tl-item"><div class="time">19:00</div><div class="act">&#258;n t&#7889;i t&#7841;i ch&#7907; &#273;&#234;m Jalan Alor</div><div class="note">Satay RM 16/10 xi&#234;n, Char Kuey Teow, Dim Sum, n&#432;&#7899;c d&#7915;a t&#432;&#417;i</div></div>
-        <div class="tl-item"><div class="time">20:00 - 21:00</div><div class="act">Show nh&#7841;c n&#432;&#7899;c KLCC Fountain &#8212; mi&#7877;n ph&#237;</div></div>
+        <div class="tl-item"><div class="time">07:30</div><div class="act">&#258;n s&#225;ng, tr&#7843; ph&#242;ng Asteria Melaka</div></div>
+        <div class="tl-item"><div class="time">08:30 - 10:30</div><div class="act">D&#7841;o ph&#7889; &#8212; Nh&#224; th&#7901; St. Paul, mua &#273;&#7863;c s&#7843;n (pineapple tart, dodol)</div></div>
+        <div class="tl-item"><div class="time">11:00 - 13:30</div><div class="act">Xe bu&#253;t Melaka Sentral &#8594; TBS Terminal (KL)</div></div>
+        <div class="tl-item"><div class="time">14:00</div><div class="act">Nh&#7853;n ph&#242;ng Izumi Hotel Bukit Bintang (t&#7915; 15:00)</div></div>
+        <div class="tl-item"><div class="time">14:30</div><div class="act">&#258;n tr&#432;a Petaling Street / Ph&#7889; T&#224;u KL</div></div>
+        <div class="tl-item"><div class="time">16:00 - 18:00</div><div class="act">KLCC &#8212; Petronas, c&#244;ng vi&#234;n KLCC, Suria KLCC</div></div>
+        <div class="tl-item"><div class="time">19:00</div><div class="act">&#258;n t&#7889;i ch&#7907; &#273;&#234;m Jalan Alor</div></div>
+        <div class="tl-item"><div class="time">20:00</div><div class="act">Show nh&#7841;c n&#432;&#7899;c KLCC Fountain (mi&#7877;n ph&#237;)</div></div>
     </div>
-    <div class="hcard">
-        <h4>&#127976; Kh&#225;ch s&#7841;n Kuala Lumpur (1 &#273;&#234;m: 30/04)</h4>
-        <ul class="hlist">
-            <li class="hitem"><div><span class="nm">Hotel Imperial Bukit Bintang</span><span class="pr"> &#8212; ~$25-35/&#273;&#234;m</span></div><a href="https://www.booking.com/searchresults.html?ss=Hotel+Imperial+Bukit+Bintang+Kuala+Lumpur&checkin=2026-04-30&checkout=2026-05-01&group_adults=2&group_children=2" target="_blank" rel="noopener">&#272;&#7863;t ph&#242;ng &#8599;</a></li>
-            <li class="hitem"><div><span class="nm">Ceria Hotel Bukit Bintang</span><span class="pr"> &#8212; ~$20-30/&#273;&#234;m</span></div><a href="https://www.booking.com/searchresults.html?ss=Ceria+Hotel+Bukit+Bintang+Kuala+Lumpur&checkin=2026-04-30&checkout=2026-05-01&group_adults=2&group_children=2" target="_blank" rel="noopener">&#272;&#7863;t ph&#242;ng &#8599;</a></li>
-            <li class="hitem"><div><span class="nm">YY38 Hotel Bukit Bintang</span><span class="pr"> &#8212; ~$20-30/&#273;&#234;m</span></div><a href="https://www.booking.com/searchresults.html?ss=YY38+Hotel+Bukit+Bintang+Kuala+Lumpur&checkin=2026-04-30&checkout=2026-05-01&group_adults=2&group_children=2" target="_blank" rel="noopener">&#272;&#7863;t ph&#242;ng &#8599;</a></li>
-        </ul>
+    <div class="bkcard">
+        <h4>&#127976; Izumi Hotel Bukit Bintang (1 &#273;&#234;m: 30/04-01/05)</h4>
+        <dl class="bk-grid">
+            <dt>&#272;&#7883;a ch&#7881;</dt><dd>85 Jalan Berangan, off Bukit Bintang, 50200 KL</dd>
+            <dt>&#272;i&#7879;n tho&#7841;i</dt><dd>+60 3 2145 8833</dd>
+            <dt>Nh&#7853;n ph&#242;ng</dt><dd>30/04, 15:00 - 00:00</dd>
+            <dt>Tr&#7843; ph&#242;ng</dt><dd>01/05 tr&#432;&#7899;c 12:00</dd>
+            <dt>Ph&#242;ng</dt><dd>Deluxe Family Room, 2 gi&#432;&#7901;ng Queen</dd>
+            <dt>T&#7893;ng gi&#225;</dt><dd>VND 2.458.234 (~MYR 376)</dd>
+        </dl>
+        <p style="font-size:.8rem;color:var(--kl);margin-bottom:8px">&#9888; Thu&#7871; du l&#7883;ch RM 10/ph&#242;ng/&#273;&#234;m tr&#7843; t&#7841;i qu&#7847;y. Kh&#244;ng c&#243; ch&#7895; &#273;&#7853;u xe.</p>
+        <div class="bk-en">
+            <h5>&#127468;&#127463; Show this to reception</h5>
+            <p>Hello, I have a reservation under the name <strong>Van Thanh Vu</strong>.</p>
+            <p>Booking Confirmation: <span class="conf">6143.585.142</span> &nbsp; PIN: <strong>6050</strong></p>
+            <p>Check-in: <strong>30 April 2026</strong> &nbsp;|&nbsp; Check-out: <strong>1 May 2026</strong></p>
+            <p>1 Deluxe Family Room with 2 Queen Beds, 1 night</p>
+            <p>Guests: 2 adults (Van Thanh Vu &amp; Thai Thi Thuy) + 2 children</p>
+            <p>I will pay the tourist tax of RM 10 now.</p>
+        </div>
     </div>
 </section>
 
 <!-- NG&#192;Y 5 -->
 <section class="day-section c-home">
-    <div class="day-header">
-        <div class="day-num"><span class="n">5</span><span class="l">Ng&#224;y</span></div>
-        <div><h2>Batu Caves &#8594; Bay v&#7873; S&#224;i G&#242;n</h2><span class="date">Th&#7913; S&#225;u, 01/05/2026 &#8226; Batu Caves, Central Market, KLIA</span></div>
-    </div>
+    <div class="day-header"><div class="day-num"><span class="n">5</span><span class="l">Ng&#224;y</span></div><div><h2>Batu Caves &#8594; Bay v&#7873;</h2><span class="date">Th&#7913; S&#225;u, 01/05/2026</span></div></div>
     <div class="agrid">
-        <div class="acard"><img src="https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=600&q=80" alt="Batu Caves" loading="lazy"><div class="info"><h3>Batu Caves</h3><p class="desc">272 b&#7853;c thang c&#7847;u v&#7891;ng r&#7921;c r&#7905;, &#273;&#7873;n Hindu trong hang &#273;&#7897;ng, t&#432;&#7907;ng Lord Murugan 42.7m</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">2-3 ti&#7871;ng</span></div></div></div>
-        <div class="acard"><img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?w=600&q=80" alt="Central Market KL" loading="lazy"><div class="info"><h3>Central Market &amp; V&#432;&#7901;n B&#225;ch Th&#7843;o</h3><p class="desc">Ch&#7907; th&#7911; c&#244;ng ngh&#7879;, &#273;&#7891; l&#432;u ni&#7879;m; V&#432;&#7901;n th&#7921;c v&#7853;t Perdana xanh m&#225;t</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205; v&#224;o</span><span class="badge b-time">1-1.5 ti&#7871;ng</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=600&q=80" alt="Batu Caves" loading="lazy"><div class="info"><h3>Batu Caves</h3><p class="desc">272 b&#7853;c thang c&#7847;u v&#7891;ng, &#273;&#7873;n Hindu, t&#432;&#7907;ng Lord Murugan 42.7m</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">2-3h</span></div></div></div>
+        <div class="acard"><img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?w=600&q=80" alt="Central Market" loading="lazy"><div class="info"><h3>Central Market</h3><p class="desc">Ch&#7907; th&#7911; c&#244;ng, &#273;&#7891; l&#432;u ni&#7879;m Malaysia</p><div class="meta"><span class="badge b-free">MI&#7876;N PH&#205;</span><span class="badge b-time">1h</span></div></div></div>
     </div>
     <div class="tl">
-        <div class="tl-item"><div class="time">06:30</div><div class="act">D&#7853;y s&#7899;m, &#259;n s&#225;ng t&#7841;i qu&#225;n Mamak &#8212; Roti Canai, Teh Tarik</div></div>
-        <div class="tl-item"><div class="time">07:30 - 10:30</div><div class="act">Batu Caves &#8212; leo 272 b&#7853;c, tham quan &#273;&#7873;n trong hang</div><div class="note">T&#224;u KTM Komuter t&#7915; KL Sentral ~RM 4/ng&#432;&#7901;i, 30 ph&#250;t. &#272;i s&#7899;m tr&#225;nh n&#7855;ng!</div></div>
-        <div class="tl-item"><div class="time">11:00 - 12:00</div><div class="act">Central Market ho&#7863;c V&#432;&#7901;n B&#225;ch Th&#7843;o Perdana (t&#249;y ch&#7885;n)</div></div>
-        <div class="tl-item"><div class="time">12:00</div><div class="act">&#258;n tr&#432;a nh&#7865;, l&#7845;y h&#224;nh l&#253; t&#7915; kh&#225;ch s&#7841;n</div></div>
-        <div class="tl-item"><div class="time">13:00</div><div class="act">Di chuy&#7875;n ra s&#226;n bay KLIA</div><div class="note">Grab ~RM 80-120/xe (1 ti&#7871;ng) ho&#7863;c KLIA Ekspres ~RM 55/NL, RM 25/TE (28 ph&#250;t)</div></div>
-        <div class="tl-item"><div class="time">14:30</div><div class="act">&#272;&#7871;n KLIA, l&#224;m th&#7911; t&#7909;c check-in</div></div>
-        <div class="tl-item"><div class="time">17:30</div><div class="act">Bay v&#7873; S&#224;i G&#242;n! K&#7871;t th&#250;c chuy&#7871;n &#273;i tuy&#7879;t v&#7901;i!</div></div>
+        <div class="tl-item"><div class="time">06:30</div><div class="act">&#258;n s&#225;ng qu&#225;n Mamak &#8212; Roti Canai, Teh Tarik</div></div>
+        <div class="tl-item"><div class="time">07:30 - 10:30</div><div class="act">Batu Caves &#8212; KTM Komuter t&#7915; KL Sentral (~RM 4, 30p)</div><div class="note">&#272;i s&#7899;m tr&#225;nh n&#7855;ng! M&#7863;c qu&#7847;n d&#224;i v&#224;o &#273;&#7873;n.</div></div>
+        <div class="tl-item"><div class="time">11:00</div><div class="act">Central Market ho&#7863;c mua s&#7855;m th&#234;m</div></div>
+        <div class="tl-item"><div class="time">12:00</div><div class="act">&#258;n tr&#432;a, l&#7845;y h&#224;nh l&#253; (tr&#7843; ph&#242;ng tr&#432;&#7899;c 12:00)</div></div>
+        <div class="tl-item"><div class="time">13:00</div><div class="act">Grab ra KLIA1 (~RM 80-120, 1 ti&#7871;ng)</div><div class="note">Ho&#7863;c KLIA Ekspres t&#7915; KL Sentral (RM 55/NL, RM 25/TE, 28 ph&#250;t)</div></div>
+        <div class="tl-item"><div class="time">14:30</div><div class="act">&#272;&#7871;n KLIA1, l&#224;m th&#7911; t&#7909;c (l&#224;m tr&#432;&#7899;c 90 ph&#250;t)</div></div>
+    </div>
+    <div class="flcard">
+        <h4>&#9992;&#65039; Chuy&#7871;n bay v&#7873;: Malaysia Airlines MH-766</h4>
+        <div class="fl-route"><div><div class="fl-time">17:35</div><div class="fl-city">KUL &#8212; KLIA1</div></div><div class="fl-arrow">&#8594;</div><div><div class="fl-time">18:50</div><div class="fl-city">SGN &#8212; T&#226;n S&#417;n Nh&#7845;t, Nh&#224; ga 2</div></div></div>
+        <div class="fl-details">
+            <span>PNR 1: <strong>DLV2KI</strong> (Minh Tr&#237; + Th&#7911;y)</span>
+            <span>PNR 2: <strong>BQGP2Y</strong> (Thanh + Tu&#7879; Anh)</span>
+            <span>H&#224;nh l&#253;: 7kg + 20kg/ng&#432;&#7901;i</span>
+        </div>
     </div>
 </section>
 
 <div class="tips">
-    <h3>&#128161; M&#7865;o Ti&#7871;t Ki&#7879;m Quan Tr&#7885;ng</h3>
+    <h3>&#128161; M&#7865;o Quan Tr&#7885;ng</h3>
     <ul>
-        <li>&#258;n t&#7841;i hawker centre &amp; qu&#225;n Mamak &#8212; SGD 3-10/m&#243;n (SG), RM 3-8/m&#243;n (MY)</li>
-        <li>T&#7853;n d&#7909;ng &#273;i&#7875;m MI&#7876;N PH&#205;: Merlion, Gardens, Sentosa, Dutch Square, A Famosa, Batu Caves</li>
-        <li>&#272;&#7863;t v&#233; xe bu&#253;t SG&#8594;Malacca tr&#432;&#7899;c tr&#234;n RedBus / Easybook &#8212; gi&#225; r&#7867; h&#417;n</li>
-        <li>Malacca&#8594;KL kh&#244;ng c&#7847;n &#273;&#7863;t tr&#432;&#7899;c &#8212; xe ch&#7841;y m&#7895;i 30 ph&#250;t, r&#7845;t r&#7867;</li>
-        <li>&#272;&#7893;i ti&#7873;n t&#7841;i Mustafa Centre (SG) ho&#7863;c money changer &#7903; JB khi qua c&#7917;a kh&#7849;u</li>
-        <li>D&#249;ng Grab thay taxi &#8212; r&#7867; h&#417;n, minh b&#7841;ch gi&#225;, an to&#224;n</li>
-        <li>Mua th&#7867; Touch n Go khi &#273;&#7871;n Malaysia &#8212; d&#249;ng cho t&#224;u, xe bu&#253;t, c&#7917;a h&#224;ng</li>
+        <li>&#258;n t&#7841;i hawker centre &amp; Mamak &#8212; SGD 3-10/m&#243;n (SG), RM 3-8/m&#243;n (MY)</li>
+        <li>Malacca: &#273;&#7863;c s&#7843;n C&#417;m g&#224; vi&#234;n, Satay Celup, Cendol &#8212; kh&#244;ng n&#417;i n&#224;o c&#243;</li>
+        <li>&#272;&#7863;t v&#233; xe SG&#8594;Malacca tr&#432;&#7899;c tr&#234;n RedBus / Easybook</li>
+        <li>Malacca&#8594;KL kh&#244;ng c&#7847;n &#273;&#7863;t tr&#432;&#7899;c &#8212; xe m&#7895;i 30 ph&#250;t, r&#7845;t r&#7867;</li>
+        <li>Asteria Melaka: chu&#7849;n b&#7883; MYR 100 ti&#7873;n m&#7863;t &#273;&#7863;t c&#7885;c</li>
+        <li>Bay v&#7873;: 2 m&#227; &#273;&#7863;t kh&#225;c nhau (DLV2KI + BQGP2Y), l&#224;m th&#7911; t&#7909;c c&#249;ng nhau</li>
+        <li>D&#249;ng Grab thay taxi, mua Touch n Go khi &#273;&#7871;n Malaysia</li>
     </ul>
 </div>
+</div></div>
 
-</div>
-</div>
+<!-- ===== TAB BOOKING (Ti&#7871;ng Anh cho l&#7877; t&#226;n) ===== -->
+<div id="tab-booking" class="tab-content"><div class="container" style="padding-top:28px;padding-bottom:36px">
+<h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;margin-bottom:6px">Th&#244;ng Tin &#272;&#7863;t Ph&#242;ng &amp; V&#233; Bay</h2>
+<p style="color:var(--txt2);margin-bottom:24px;font-size:.85rem">In ho&#7863;c m&#7903; tr&#234;n &#273;i&#7879;n tho&#7841;i &#273;&#7875; &#273;&#432;a cho l&#7877; t&#226;n kh&#225;ch s&#7841;n xem. Ph&#7847;n ti&#7871;ng Anh trong khung g&#7841;ch n&#233;t.</p>
 
-<!-- ========== TAB CHECKLIST ========== -->
-<div id="tab-checklist" class="tab-content">
-<div class="container" style="padding-top:32px;padding-bottom:40px">
-    <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;margin-bottom:8px">Danh S&#225;ch Chu&#7849;n B&#7883;</h2>
-    <p style="color:var(--txt2);margin-bottom:28px">Tick v&#224;o c&#225;c m&#7909;c &#273;&#227; chu&#7849;n b&#7883; xong. Ti&#7871;n &#273;&#7897; &#273;&#432;&#7907;c l&#432;u t&#7921; &#273;&#7897;ng.</p>
-    <div class="ckgrid">
-        <div class="ckcard"><h4>&#128196; Gi&#7845;y T&#7901; &amp; T&#224;i Ch&#237;nh</h4>
-            <div class="ckitem"><input type="checkbox" id="c1"><label for="c1">H&#7897; chi&#7871;u (c&#242;n h&#7841;n &gt;6 th&#225;ng)<span class="hint">VN mi&#7877;n visa Singapore 30 ng&#224;y &amp; Malaysia 30 ng&#224;y</span></label></div>
-            <div class="ckitem"><input type="checkbox" id="c2"><label for="c2">B&#7843;n sao h&#7897; chi&#7871;u (ch&#7909;p &#7843;nh + l&#432;u &#273;i&#7879;n tho&#7841;i)</label></div>
-            <div class="ckitem"><input type="checkbox" id="c3"><label for="c3">V&#233; m&#225;y bay (in ra ho&#7863;c l&#432;u &#273;i&#7879;n tho&#7841;i)</label></div>
-            <div class="ckitem"><input type="checkbox" id="c4"><label for="c4">X&#225;c nh&#7853;n &#273;&#7863;t ph&#242;ng kh&#225;ch s&#7841;n</label></div>
-            <div class="ckitem"><input type="checkbox" id="c5"><label for="c5">B&#7843;o hi&#7875;m du l&#7883;ch<span class="hint">N&#234;n mua cho c&#7843; gia &#273;&#236;nh</span></label></div>
-            <div class="ckitem"><input type="checkbox" id="c6"><label for="c6">Ti&#7873;n m&#7863;t (SGD + MYR)<span class="hint">&#272;&#7893;i &#7903; Mustafa Centre (SG) t&#7927; gi&#225; t&#7889;t</span></label></div>
-            <div class="ckitem"><input type="checkbox" id="c7"><label for="c7">Th&#7867; ng&#226;n h&#224;ng qu&#7889;c t&#7871; (Visa/Mastercard)</label></div>
-        </div>
-        <div class="ckcard"><h4>&#128241; &#272;i&#7879;n T&#7917; &amp; K&#7871;t N&#7889;i</h4>
-            <div class="ckitem"><input type="checkbox" id="c8"><label for="c8">Adapter &#7893; c&#7855;m lo&#7841;i G (3 ch&#226;n d&#7865;t)<span class="hint">D&#249;ng chung cho SG &amp; MY</span></label></div>
-            <div class="ckitem"><input type="checkbox" id="c9"><label for="c9">S&#7841;c d&#7921; ph&#242;ng (power bank)</label></div>
-            <div class="ckitem"><input type="checkbox" id="c10"><label for="c10">D&#226;y s&#7841;c &#273;i&#7879;n tho&#7841;i</label></div>
-            <div class="ckitem"><input type="checkbox" id="c11"><label for="c11">SIM 4G qu&#7889;c t&#7871; ho&#7863;c eSIM<span class="hint">Mua t&#7841;i Changi ho&#7863;c d&#249;ng eSIM tr&#432;&#7899;c</span></label></div>
-            <div class="ckitem"><input type="checkbox" id="c12"><label for="c12">T&#7843;i app: Grab, Google Maps, Booking.com</label></div>
-            <div class="ckitem"><input type="checkbox" id="c13"><label for="c13">T&#7843;i b&#7843;n &#273;&#7891; offline Singapore &amp; Malaysia</label></div>
-        </div>
-        <div class="ckcard"><h4>&#128085; Qu&#7847;n &#193;o &amp; Ph&#7909; Ki&#7879;n</h4>
-            <div class="ckitem"><input type="checkbox" id="c14"><label for="c14">Qu&#7847;n &#225;o nh&#7865;, tho&#225;ng m&#225;t (28-34&#176;C)<span class="hint">4-5 b&#7897; cho m&#7895;i ng&#432;&#7901;i</span></label></div>
-            <div class="ckitem"><input type="checkbox" id="c15"><label for="c15">Gi&#224;y &#273;i b&#7897; tho&#7843;i m&#225;i<span class="hint">Batu Caves 272 b&#7853;c!</span></label></div>
-            <div class="ckitem"><input type="checkbox" id="c16"><label for="c16">D&#233;p x&#7887; ng&#243;n / sandal</label></div>
-            <div class="ckitem"><input type="checkbox" id="c17"><label for="c17">&#193;o m&#432;a g&#7845;p nh&#7887; / &#244; d&#249;<span class="hint">Th&#225;ng 4 c&#243; th&#7875; m&#432;a r&#224;o</span></label></div>
-            <div class="ckitem"><input type="checkbox" id="c18"><label for="c18">M&#361; / n&#243;n ch&#7889;ng n&#7855;ng</label></div>
-            <div class="ckitem"><input type="checkbox" id="c19"><label for="c19">K&#237;nh m&#225;t</label></div>
-            <div class="ckitem"><input type="checkbox" id="c20"><label for="c20">&#193;o kho&#225;c m&#7887;ng (m&#225;y l&#7841;nh tr&#234;n xe bu&#253;t l&#7841;nh)</label></div>
-        </div>
-        <div class="ckcard"><h4>&#128138; S&#7913;c Kh&#7887;e &amp; V&#7879; Sinh</h4>
-            <div class="ckitem"><input type="checkbox" id="c21"><label for="c21">Kem ch&#7889;ng n&#7855;ng SPF50+</label></div>
-            <div class="ckitem"><input type="checkbox" id="c22"><label for="c22">Thu&#7889;c ch&#7889;ng say xe cho tr&#7867;<span class="hint">Ch&#7863;ng SG&#8594;Malacca 4-5 ti&#7871;ng</span></label></div>
-            <div class="ckitem"><input type="checkbox" id="c23"><label for="c23">Thu&#7889;c c&#225; nh&#226;n (&#273;au b&#7909;ng, c&#7843;m, s&#7889;t)</label></div>
-            <div class="ckitem"><input type="checkbox" id="c24"><label for="c24">Thu&#7889;c / x&#7883;t ch&#7889;ng mu&#7895;i</label></div>
-            <div class="ckitem"><input type="checkbox" id="c25"><label for="c25">B&#236;nh n&#432;&#7899;c x&#225;ch tay</label></div>
-            <div class="ckitem"><input type="checkbox" id="c26"><label for="c26">Kh&#259;n &#432;&#7899;t / gi&#7845;y &#432;&#7899;t</label></div>
-            <div class="ckitem"><input type="checkbox" id="c27"><label for="c27">B&#224;n ch&#7843;i + kem &#273;&#225;nh r&#259;ng</label></div>
-        </div>
-        <div class="ckcard"><h4>&#127907; &#272;&#7863;t Tr&#432;&#7899;c (V&#233; &amp; Ph&#242;ng)</h4>
-            <div class="ckitem"><input type="checkbox" id="c28"><label for="c28">Kh&#225;ch s&#7841;n Singapore (2 &#273;&#234;m: 27-28/04)</label></div>
-            <div class="ckitem"><input type="checkbox" id="c29"><label for="c29">Kh&#225;ch s&#7841;n Malacca (&#273;&#234;m 29/04)</label></div>
-            <div class="ckitem"><input type="checkbox" id="c30"><label for="c30">Kh&#225;ch s&#7841;n Kuala Lumpur (&#273;&#234;m 30/04)</label></div>
-            <div class="ckitem"><input type="checkbox" id="c31"><label for="c31">V&#233; xe bu&#253;t SG &#8594; Malacca<span class="hint">&#272;&#7863;t tr&#234;n RedBus / Easybook</span></label></div>
-            <div class="ckitem"><input type="checkbox" id="c32"><label for="c32">V&#233; du thuy&#7873;n s&#244;ng Melaka (t&#249;y ch&#7885;n)<span class="hint">&#272;&#7863;t online r&#7867; h&#417;n 20%</span></label></div>
-        </div>
-        <div class="ckcard"><h4>&#9888;&#65039; L&#432;u &#221; Quan Tr&#7885;ng</h4>
-            <div class="ckitem"><input type="checkbox" id="c33"><label for="c33">L&#432;u s&#7889; kh&#7849;n c&#7845;p<span class="hint">SG: 999 | MY: 999 | &#272;SQ VN: +65 6462 5938</span></label></div>
-            <div class="ckitem"><input type="checkbox" id="c34"><label for="c34">Ch&#7909;p &#7843;nh h&#7897; chi&#7871;u l&#432;u &#273;i&#7879;n tho&#7841;i</label></div>
-            <div class="ckitem"><input type="checkbox" id="c35"><label for="c35">D&#7863;n d&#242; tr&#7867; gi&#7919; h&#7897; chi&#7871;u c&#7849;n th&#7853;n</label></div>
-            <div class="ckitem"><input type="checkbox" id="c36"><label for="c36">Batu Caves: m&#7863;c qu&#7847;n d&#224;i khi v&#224;o &#273;&#7873;n<span class="hint">&#272;&#7873;n Hindu y&#234;u c&#7847;u k&#237;n &#273;&#225;o</span></label></div>
-        </div>
-    </div>
-</div>
+<!-- FLIGHT &#272;I -->
+<div class="flcard">
+    <h4>&#9992;&#65039; Bay &#273;i: VietJet VJ-811 &#8212; 27/04/2026</h4>
+    <div class="fl-route"><div><div class="fl-time">09:00</div><div class="fl-city">SGN &#8212; Nh&#224; ga 2</div></div><div class="fl-arrow">&#8594;</div><div><div class="fl-time">12:05</div><div class="fl-city">SIN &#8212; Changi T4</div></div></div>
+    <div class="fl-details"><span>PNR: <strong>VS8SRA</strong></span><span>Traveloka: 1344161577</span><span>Gh&#7871;: 28C (Th&#7911;y), 28D (Thanh), 28E (Tr&#237;), 28F (Tu&#7879; Anh)</span></div>
 </div>
 
-<!-- ========== TAB CHI PH&#205; ========== -->
-<div id="tab-budget" class="tab-content">
-<div class="container" style="padding-top:32px;padding-bottom:40px">
-    <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;margin-bottom:24px">Chi Ph&#237; D&#7921; Ki&#7871;n (4 ng&#432;&#7901;i)</h2>
-
-    <div style="margin-bottom:32px"><h3 style="margin-bottom:12px">&#128652; Di chuy&#7875;n</h3>
-        <table class="btable"><thead><tr><th>Ch&#7863;ng</th><th>Ph&#432;&#417;ng ti&#7879;n</th><th>Th&#7901;i gian</th><th style="text-align:right">4 ng&#432;&#7901;i (USD)</th></tr></thead><tbody>
-            <tr><td>Changi &#8594; Kh&#225;ch s&#7841;n SG</td><td>MRT</td><td>30-45p</td><td style="text-align:right">$6</td></tr>
-            <tr><td>N&#7897;i th&#224;nh SG (2 ng&#224;y)</td><td>EZ-Link Card</td><td>2 ng&#224;y</td><td style="text-align:right">$40-50</td></tr>
-            <tr><td>Singapore &#8594; Malacca</td><td>Xe bu&#253;t KKKL/707</td><td>4-5h</td><td style="text-align:right">$60-100</td></tr>
-            <tr><td>N&#7897;i th&#224;nh Malacca</td><td>Grab</td><td>&#8212;</td><td style="text-align:right">$5-8</td></tr>
-            <tr><td>Malacca &#8594; KL</td><td>Xe bu&#253;t Transnasional</td><td>2-2.5h</td><td style="text-align:right">$10-14</td></tr>
-            <tr><td>N&#7897;i th&#224;nh KL</td><td>Touch n Go / Grab</td><td>&#8212;</td><td style="text-align:right">$15-20</td></tr>
-            <tr><td>KL &#8594; KLIA</td><td>Grab</td><td>1 ti&#7871;ng</td><td style="text-align:right">$20-27</td></tr>
-            <tr class="total"><td colspan="3">T&#7892;NG DI CHUY&#7874;N</td><td style="text-align:right">$156-225</td></tr>
-        </tbody></table>
-    </div>
-
-    <div style="margin-bottom:32px"><h3 style="margin-bottom:12px">&#127976; Kh&#225;ch s&#7841;n (4 &#273;&#234;m)</h3>
-        <table class="btable"><thead><tr><th>Th&#224;nh ph&#7889;</th><th>&#272;&#234;m</th><th>Gi&#225;/&#273;&#234;m</th><th style="text-align:right">USD</th></tr></thead><tbody>
-            <tr><td>Singapore (2 &#273;&#234;m)</td><td>27-28/04</td><td>$55-70</td><td style="text-align:right">$110-140</td></tr>
-            <tr><td>Malacca</td><td>29/04</td><td>$15-25</td><td style="text-align:right">$15-25</td></tr>
-            <tr><td>Kuala Lumpur</td><td>30/04</td><td>$25-35</td><td style="text-align:right">$25-35</td></tr>
-            <tr class="total"><td colspan="3">T&#7892;NG KH&#193;CH S&#7840;N</td><td style="text-align:right">$150-200</td></tr>
-        </tbody></table>
-    </div>
-
-    <div style="margin-bottom:32px"><h3 style="margin-bottom:12px">&#127858; &#258;n u&#7889;ng (5 ng&#224;y)</h3>
-        <table class="btable"><thead><tr><th>B&#7919;a</th><th>Chi ti&#7871;t</th><th style="text-align:right">4 ng&#432;&#7901;i/ng&#224;y</th></tr></thead><tbody>
-            <tr><td>S&#225;ng</td><td>Hawker / Mamak</td><td style="text-align:right">$8-12</td></tr>
-            <tr><td>Tr&#432;a</td><td>Hawker / &#273;&#7891; &#259;n &#273;&#432;&#7901;ng ph&#7889;</td><td style="text-align:right">$12-18</td></tr>
-            <tr><td>T&#7889;i</td><td>Hawker / ch&#7907; &#273;&#234;m</td><td style="text-align:right">$15-22</td></tr>
-            <tr><td>&#258;n v&#7863;t</td><td>Tr&#224; s&#7919;a, tr&#225;i c&#226;y</td><td style="text-align:right">$5-8</td></tr>
-            <tr class="total"><td colspan="2">T&#7892;NG &#258;N U&#7888;NG (5 NG&#192;Y)</td><td style="text-align:right">$105-145</td></tr>
-        </tbody></table>
-    </div>
-
-    <div style="margin-bottom:32px"><h3 style="margin-bottom:12px">&#127915; Tham quan</h3>
-        <table class="btable"><thead><tr><th>&#272;&#7883;a &#273;i&#7875;m</th><th>Chi ph&#237;</th><th style="text-align:right">4 ng&#432;&#7901;i</th></tr></thead><tbody>
-            <tr><td>Jewel Changi, Merlion, Gardens ngo&#224;i tr&#7901;i</td><td>Mi&#7877;n ph&#237;</td><td style="text-align:right">$0</td></tr>
-            <tr><td>Chinatown, Little India, Sentosa</td><td>Mi&#7877;n ph&#237;</td><td style="text-align:right">$0</td></tr>
-            <tr><td>Qu&#7843;ng tr&#432;&#7901;ng H&#224; Lan, A Famosa, Jonker</td><td>Mi&#7877;n ph&#237;</td><td style="text-align:right">$0</td></tr>
-            <tr><td>Th&#225;p xoay Menara Taming Sari</td><td>RM 20 NL + RM 10 TE</td><td style="text-align:right">$14</td></tr>
-            <tr><td>Du thuy&#7873;n s&#244;ng Melaka</td><td>~RM 35/ng&#432;&#7901;i</td><td style="text-align:right">$32</td></tr>
-            <tr><td>Petronas (b&#234;n ngo&#224;i), KLCC Park, Batu Caves</td><td>Mi&#7877;n ph&#237;</td><td style="text-align:right">$0</td></tr>
-            <tr class="total"><td colspan="2">T&#7892;NG THAM QUAN</td><td style="text-align:right">~$46</td></tr>
-        </tbody></table>
-    </div>
-
-    <div style="margin-bottom:32px"><h3 style="margin-bottom:12px">&#128176; T&#7892;NG K&#7870;T</h3>
-        <table class="btable"><thead><tr><th>H&#7841;ng m&#7909;c</th><th style="text-align:right">Ti&#7871;t ki&#7879;m</th><th style="text-align:right">Tho&#7843;i m&#225;i</th></tr></thead><tbody>
-            <tr><td>Kh&#225;ch s&#7841;n (4 &#273;&#234;m)</td><td style="text-align:right">$150</td><td style="text-align:right">$200</td></tr>
-            <tr><td>&#258;n u&#7889;ng (5 ng&#224;y)</td><td style="text-align:right">$105</td><td style="text-align:right">$145</td></tr>
-            <tr><td>Di chuy&#7875;n</td><td style="text-align:right">$156</td><td style="text-align:right">$225</td></tr>
-            <tr><td>Tham quan</td><td style="text-align:right">$46</td><td style="text-align:right">$46</td></tr>
-            <tr><td>L&#432;u ni&#7879;m &amp; linh tinh</td><td style="text-align:right">$40</td><td style="text-align:right">$80</td></tr>
-            <tr class="total"><td>T&#7892;NG C&#7896;NG</td><td style="text-align:right">~$497</td><td style="text-align:right">~$696</td></tr>
-        </tbody></table>
-        <div style="background:#dcfce7;border-radius:12px;padding:16px;margin-top:16px;text-align:center">
-            <strong style="color:#15803d;font-size:1.1rem">D&#432; ng&#226;n s&#225;ch: $804 - $1,003 USD</strong><br>
-            <span style="color:#166534;font-size:.9rem">C&#243; th&#7875; th&#234;m Universal Studios (~$210), Sentosa c&#225;p treo (~$70), ho&#7863;c Petronas Deck (~$100)</span>
-        </div>
+<!-- KS SINGAPORE -->
+<div class="bkcard">
+    <h4>&#127976; 1. ibis budget Singapore Bugis (2 &#273;&#234;m)</h4>
+    <dl class="bk-grid">
+        <dt>&#272;&#7883;a ch&#7881;</dt><dd>33 Middle Road, Singapore 188942</dd>
+        <dt>&#272;i&#7879;n tho&#7841;i</dt><dd>+65 6345 6116</dd>
+        <dt>Nh&#7853;n / Tr&#7843;</dt><dd>27/04 (15:00) &#8594; 29/04 (12:00)</dd>
+        <dt>Ph&#242;ng</dt><dd>2 ph&#242;ng: Standard Double + Superior Twin</dd>
+        <dt>T&#7893;ng gi&#225;</dt><dd>VND 10.467.801 (~S$510.53)</dd>
+        <dt>H&#7911;y</dt><dd>Kh&#244;ng ho&#224;n ti&#7873;n</dd>
+    </dl>
+    <div class="bk-en">
+        <h5>&#127468;&#127463; For reception &#8212; ibis budget Singapore Bugis</h5>
+        <p>Good afternoon, we have a reservation for <strong>2 rooms, 2 nights</strong>.</p>
+        <p>Booking Confirmation Number: <span class="conf">6797.058.688</span></p>
+        <p>PIN Code: <strong>3373</strong></p>
+        <p>Guest name: <strong>Vu Van Thanh</strong></p>
+        <p>Check-in: <strong>27 April 2026</strong> | Check-out: <strong>29 April 2026</strong></p>
+        <p>Room 1: Standard Double Room (No Window) &#8212; 1 adult + 1 child</p>
+        <p>Room 2: Superior Twin Room &#8212; 1 adult + 1 child</p>
+        <p>We are a family of 4: 2 adults, son (14 years old), daughter (12 years old).</p>
+        <p>Special request: Please assign rooms close together if possible.</p>
     </div>
 </div>
+
+<!-- KS MALACCA -->
+<div class="bkcard" style="border-color:#fed7aa;background:linear-gradient(135deg,#fff7ed,#fffbeb)">
+    <h4>&#127976; 2. Asteria Melaka by Attic Suite (1 &#273;&#234;m)</h4>
+    <dl class="bk-grid">
+        <dt>&#272;&#7883;a ch&#7881;</dt><dd>Jalan KSB 11A, Asteria Melaka, 75200 Melaka</dd>
+        <dt>&#272;i&#7879;n tho&#7841;i</dt><dd>+60 19 635 7678</dd>
+        <dt>Nh&#7853;n / Tr&#7843;</dt><dd>29/04 (15:00) &#8594; 30/04 (12:00)</dd>
+        <dt>Ph&#242;ng</dt><dd>Superior Twin 2 Queen, ban c&#244;ng, view TP</dd>
+        <dt>T&#7893;ng gi&#225;</dt><dd>VND 1.970.128 (~MYR 301.55)</dd>
+        <dt>&#272;&#7863;t c&#7885;c</dt><dd>MYR 100 ti&#7873;n m&#7863;t (ho&#224;n khi tr&#7843; ph&#242;ng)</dd>
+    </dl>
+    <div class="bk-en">
+        <h5>&#127468;&#127463; For reception &#8212; Asteria Melaka by Attic Suite</h5>
+        <p>Good afternoon, I have a reservation.</p>
+        <p>Booking Confirmation Number: <span class="conf">6661.226.143</span></p>
+        <p>PIN Code: <strong>1940</strong></p>
+        <p>Guest name: <strong>Van Thanh Vu</strong></p>
+        <p>Check-in: <strong>29 April 2026</strong> | Check-out: <strong>30 April 2026</strong></p>
+        <p>Room type: <strong>Superior Twin with balcony &#8212; 2 Queen beds, City View</strong></p>
+        <p>Guests: 2 adults + 2 children (son 14 years old, daughter 11 years old)</p>
+        <p>I have MYR 100 cash for the damage deposit.</p>
+    </div>
 </div>
+
+<!-- KS KL -->
+<div class="bkcard" style="border-color:#67e8f9;background:linear-gradient(135deg,#ecfeff,#f0fdfa)">
+    <h4>&#127976; 3. Izumi Hotel Bukit Bintang KL (1 &#273;&#234;m)</h4>
+    <dl class="bk-grid">
+        <dt>&#272;&#7883;a ch&#7881;</dt><dd>85 Jalan Berangan, off Bukit Bintang, 50200 KL</dd>
+        <dt>&#272;i&#7879;n tho&#7841;i</dt><dd>+60 3 2145 8833</dd>
+        <dt>Nh&#7853;n / Tr&#7843;</dt><dd>30/04 (15:00) &#8594; 01/05 (12:00)</dd>
+        <dt>Ph&#242;ng</dt><dd>Deluxe Family Room, 2 Queen Beds</dd>
+        <dt>T&#7893;ng gi&#225;</dt><dd>VND 2.458.234 (~MYR 376.26)</dd>
+        <dt>Thu&#7871; DL</dt><dd>RM 10/ph&#242;ng/&#273;&#234;m (tr&#7843; t&#7841;i qu&#7847;y)</dd>
+    </dl>
+    <div class="bk-en">
+        <h5>&#127468;&#127463; For reception &#8212; Izumi Hotel Bukit Bintang</h5>
+        <p>Good afternoon, I have a reservation.</p>
+        <p>Booking Confirmation Number: <span class="conf">6143.585.142</span></p>
+        <p>PIN Code: <strong>6050</strong></p>
+        <p>Guest name: <strong>Van Thanh Vu</strong></p>
+        <p>Check-in: <strong>30 April 2026</strong> | Check-out: <strong>1 May 2026</strong></p>
+        <p>Room type: <strong>Deluxe Family Room, 2 Queen Beds</strong></p>
+        <p>Guests: 2 adults + 2 children</p>
+        <p>I will pay the tourist tax of RM 10 now.</p>
+    </div>
+</div>
+
+<!-- FLIGHT V&#7872; -->
+<div class="flcard">
+    <h4>&#9992;&#65039; Bay v&#7873;: Malaysia Airlines MH-766 &#8212; 01/05/2026</h4>
+    <div class="fl-route"><div><div class="fl-time">17:35</div><div class="fl-city">KUL &#8212; KLIA1</div></div><div class="fl-arrow">&#8594;</div><div><div class="fl-time">18:50</div><div class="fl-city">SGN &#8212; Nh&#224; ga 2</div></div></div>
+    <p style="font-size:.82rem;color:var(--txt2);margin-top:8px"><strong>L&#432;u &#253;: 2 m&#227; &#273;&#7863;t kh&#225;c nhau!</strong></p>
+    <div class="fl-details" style="margin-top:6px"><span>Booking 1 &#8212; PNR: <strong>DLV2KI</strong> &#8212; Vu Minh Tri + Thai Thi Thuy</span></div>
+    <div class="fl-details" style="margin-top:4px"><span>Booking 2 &#8212; PNR: <strong>BQGP2Y</strong> &#8212; Vu Van Thanh + Vu Tue Anh</span></div>
+    <div class="fl-details" style="margin-top:6px"><span>H&#224;nh l&#253;: 7kg x&#225;ch tay + 20kg k&#253; g&#7917;i m&#7895;i ng&#432;&#7901;i</span><span>L&#224;m th&#7911; t&#7909;c tr&#432;&#7899;c 90 ph&#250;t (15:30)</span></div>
+</div>
+</div></div>
+
+<!-- ===== TAB CHECKLIST ===== -->
+<div id="tab-checklist" class="tab-content"><div class="container" style="padding-top:28px;padding-bottom:36px">
+<h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;margin-bottom:6px">Danh S&#225;ch Chu&#7849;n B&#7883;</h2>
+<p style="color:var(--txt2);margin-bottom:24px;font-size:.85rem">Tick v&#224;o c&#225;c m&#7909;c &#273;&#227; xong. Ti&#7871;n &#273;&#7897; l&#432;u t&#7921; &#273;&#7897;ng.</p>
+<div class="ckgrid">
+    <div class="ckcard"><h4>&#128196; Gi&#7845;y T&#7901; &amp; T&#224;i Ch&#237;nh</h4>
+        <div class="ckitem"><input type="checkbox" id="c1"><label for="c1">H&#7897; chi&#7871;u 4 ng&#432;&#7901;i (h&#7841;n &gt;6 th&#225;ng)<span class="hint">VN mi&#7877;n visa SG 30 ng&#224;y &amp; MY 30 ng&#224;y</span></label></div>
+        <div class="ckitem"><input type="checkbox" id="c2"><label for="c2">Ch&#7909;p &#7843;nh h&#7897; chi&#7871;u l&#432;u &#273;i&#7879;n tho&#7841;i</label></div>
+        <div class="ckitem"><input type="checkbox" id="c3"><label for="c3">In v&#233; m&#225;y bay VJ-811 (PNR: VS8SRA)</label></div>
+        <div class="ckitem"><input type="checkbox" id="c4"><label for="c4">In v&#233; m&#225;y bay MH-766 (PNR: DLV2KI + BQGP2Y)</label></div>
+        <div class="ckitem"><input type="checkbox" id="c5"><label for="c5">In x&#225;c nh&#7853;n 3 kh&#225;ch s&#7841;n (ho&#7863;c l&#432;u &#273;i&#7879;n tho&#7841;i)</label></div>
+        <div class="ckitem"><input type="checkbox" id="c6"><label for="c6">B&#7843;o hi&#7875;m du l&#7883;ch</label></div>
+        <div class="ckitem"><input type="checkbox" id="c7"><label for="c7">Ti&#7873;n m&#7863;t: SGD + MYR<span class="hint">Chu&#7849;n b&#7883; MYR 100 m&#7863;t cho Asteria &#273;&#7863;t c&#7885;c + RM 10 thu&#7871; DL t&#7841;i Izumi</span></label></div>
+        <div class="ckitem"><input type="checkbox" id="c8"><label for="c8">Th&#7867; Visa/Mastercard qu&#7889;c t&#7871;</label></div>
+    </div>
+    <div class="ckcard"><h4>&#128241; &#272;i&#7879;n T&#7917;</h4>
+        <div class="ckitem"><input type="checkbox" id="c9"><label for="c9">Adapter &#7893; c&#7855;m lo&#7841;i G (3 ch&#226;n d&#7865;t)<span class="hint">D&#249;ng chung SG &amp; MY</span></label></div>
+        <div class="ckitem"><input type="checkbox" id="c10"><label for="c10">S&#7841;c d&#7921; ph&#242;ng + d&#226;y s&#7841;c</label></div>
+        <div class="ckitem"><input type="checkbox" id="c11"><label for="c11">SIM 4G / eSIM<span class="hint">Mua t&#7841;i Changi T4 ho&#7863;c eSIM tr&#432;&#7899;c</span></label></div>
+        <div class="ckitem"><input type="checkbox" id="c12"><label for="c12">T&#7843;i app: Grab, Google Maps</label></div>
+        <div class="ckitem"><input type="checkbox" id="c13"><label for="c13">T&#7843;i b&#7843;n &#273;&#7891; offline SG &amp; MY</label></div>
+    </div>
+    <div class="ckcard"><h4>&#128085; Qu&#7847;n &#193;o</h4>
+        <div class="ckitem"><input type="checkbox" id="c14"><label for="c14">Qu&#7847;n &#225;o nh&#7865; 4-5 b&#7897;/ng&#432;&#7901;i</label></div>
+        <div class="ckitem"><input type="checkbox" id="c15"><label for="c15">Gi&#224;y &#273;i b&#7897; tho&#7843;i m&#225;i<span class="hint">Batu Caves 272 b&#7853;c!</span></label></div>
+        <div class="ckitem"><input type="checkbox" id="c16"><label for="c16">D&#233;p x&#7887; ng&#243;n / sandal</label></div>
+        <div class="ckitem"><input type="checkbox" id="c17"><label for="c17">&#193;o m&#432;a g&#7845;p / &#244; d&#249;</label></div>
+        <div class="ckitem"><input type="checkbox" id="c18"><label for="c18">M&#361; + k&#237;nh m&#225;t</label></div>
+        <div class="ckitem"><input type="checkbox" id="c19"><label for="c19">&#193;o kho&#225;c m&#7887;ng (xe bu&#253;t l&#7841;nh)</label></div>
+        <div class="ckitem"><input type="checkbox" id="c20"><label for="c20">Qu&#7847;n d&#224;i cho Batu Caves<span class="hint">&#272;&#7873;n Hindu y&#234;u c&#7847;u k&#237;n &#273;&#225;o</span></label></div>
+    </div>
+    <div class="ckcard"><h4>&#128138; S&#7913;c Kh&#7887;e</h4>
+        <div class="ckitem"><input type="checkbox" id="c21"><label for="c21">Kem ch&#7889;ng n&#7855;ng SPF50+</label></div>
+        <div class="ckitem"><input type="checkbox" id="c22"><label for="c22">Thu&#7889;c ch&#7889;ng say xe<span class="hint">Ch&#7863;ng SG&#8594;Malacca 4-5h</span></label></div>
+        <div class="ckitem"><input type="checkbox" id="c23"><label for="c23">Thu&#7889;c c&#225; nh&#226;n, thu&#7889;c mu&#7895;i</label></div>
+        <div class="ckitem"><input type="checkbox" id="c24"><label for="c24">B&#236;nh n&#432;&#7899;c, kh&#259;n &#432;&#7899;t</label></div>
+    </div>
+    <div class="ckcard"><h4>&#127907; &#272;&#7863;t Tr&#432;&#7899;c</h4>
+        <div class="ckitem"><input type="checkbox" id="c25"><label for="c25">V&#233; xe bu&#253;t SG &#8594; Malacca<span class="hint">RedBus / Easybook, xu&#7845;t ph&#225;t ~09:00 ng&#224;y 29/04</span></label></div>
+        <div class="ckitem"><input type="checkbox" id="c26"><label for="c26">V&#233; du thuy&#7873;n Melaka River Cruise (t&#249;y ch&#7885;n)<span class="hint">&#272;&#7863;t online r&#7867; 20%</span></label></div>
+    </div>
+    <div class="ckcard"><h4>&#9888;&#65039; L&#432;u &#221;</h4>
+        <div class="ckitem"><input type="checkbox" id="c27"><label for="c27">S&#7889; kh&#7849;n c&#7845;p: SG 999 | MY 999<span class="hint">&#272;SQ VN t&#7841;i SG: +65 6462 5938</span></label></div>
+        <div class="ckitem"><input type="checkbox" id="c28"><label for="c28">Bay v&#7873; c&#243; 2 m&#227; PNR kh&#225;c nhau<span class="hint">DLV2KI (Tr&#237;+Th&#7911;y) v&#224; BQGP2Y (Thanh+Tu&#7879; Anh)</span></label></div>
+    </div>
+</div>
+</div></div>
+
+<!-- ===== TAB CHI PH&#205; ===== -->
+<div id="tab-budget" class="tab-content"><div class="container" style="padding-top:28px;padding-bottom:36px">
+<h2 style="font-family:'Playfair Display',serif;font-size:1.6rem;margin-bottom:20px">Chi Ph&#237; Th&#7921;c T&#7871;</h2>
+
+<div style="margin-bottom:28px"><h3 style="margin-bottom:10px">&#127976; Kh&#225;ch s&#7841;n (&#273;&#227; &#273;&#7863;t)</h3>
+<table class="btable"><thead><tr><th>Kh&#225;ch s&#7841;n</th><th>&#272;&#234;m</th><th style="text-align:right">VND</th><th style="text-align:right">Quy &#273;&#7893;i</th></tr></thead><tbody>
+    <tr><td>ibis budget Bugis (2 ph&#242;ng)</td><td>27-29/04</td><td style="text-align:right">10.467.801</td><td style="text-align:right">~S$510</td></tr>
+    <tr><td>Asteria Melaka (1 c&#259;n)</td><td>29-30/04</td><td style="text-align:right">1.970.128</td><td style="text-align:right">~MYR 301</td></tr>
+    <tr><td>Izumi Hotel KL (1 ph&#242;ng)</td><td>30/04-01/05</td><td style="text-align:right">2.458.234</td><td style="text-align:right">~MYR 376</td></tr>
+    <tr class="total"><td colspan="2">T&#7892;NG KH&#193;CH S&#7840;N</td><td style="text-align:right">14.896.163</td><td style="text-align:right">~$590 USD</td></tr>
+</tbody></table></div>
+
+<div style="margin-bottom:28px"><h3 style="margin-bottom:10px">&#128652; Di chuy&#7875;n (&#432;&#7899;c t&#237;nh)</h3>
+<table class="btable"><thead><tr><th>Ch&#7863;ng</th><th>Ph&#432;&#417;ng ti&#7879;n</th><th style="text-align:right">4 ng&#432;&#7901;i</th></tr></thead><tbody>
+    <tr><td>Changi T4 &#8594; ibis Bugis</td><td>MRT</td><td style="text-align:right">~S$8</td></tr>
+    <tr><td>N&#7897;i th&#224;nh SG (2 ng&#224;y)</td><td>EZ-Link Card</td><td style="text-align:right">~S$40-50</td></tr>
+    <tr><td>SG &#8594; Malacca</td><td>Xe bu&#253;t KKKL/707</td><td style="text-align:right">~S$80-120</td></tr>
+    <tr><td>N&#7897;i th&#224;nh Malacca</td><td>Grab</td><td style="text-align:right">~RM 20-30</td></tr>
+    <tr><td>Malacca &#8594; KL</td><td>Xe bu&#253;t</td><td style="text-align:right">~RM 40-60</td></tr>
+    <tr><td>N&#7897;i th&#224;nh KL</td><td>Grab / Touch n Go</td><td style="text-align:right">~RM 40-60</td></tr>
+    <tr><td>KL &#8594; KLIA1</td><td>Grab</td><td style="text-align:right">~RM 80-120</td></tr>
+    <tr class="total"><td colspan="2">T&#7892;NG DI CHUY&#7874;N</td><td style="text-align:right">~$150-200 USD</td></tr>
+</tbody></table></div>
+
+<div style="margin-bottom:28px"><h3 style="margin-bottom:10px">&#127858; &#258;n u&#7889;ng + Tham quan (&#432;&#7899;c t&#237;nh)</h3>
+<table class="btable"><thead><tr><th>H&#7841;ng m&#7909;c</th><th style="text-align:right">&#431;&#7899;c t&#237;nh</th></tr></thead><tbody>
+    <tr><td>&#258;n u&#7889;ng 5 ng&#224;y (hawker/mamak/ch&#7907; &#273;&#234;m)</td><td style="text-align:right">~$105-145</td></tr>
+    <tr><td>Menara Taming Sari + River Cruise</td><td style="text-align:right">~$46</td></tr>
+    <tr><td>L&#432;u ni&#7879;m &amp; linh tinh</td><td style="text-align:right">~$40-80</td></tr>
+    <tr class="total"><td>T&#7892;NG</td><td style="text-align:right">~$191-271</td></tr>
+</tbody></table></div>
+
+<div style="background:#dcfce7;border-radius:12px;padding:16px;text-align:center">
+    <strong style="color:#15803d;font-size:1.1rem">T&#7892;NG CHI PH&#205; (kh&#244;ng t&#237;nh v&#233; m&#225;y bay): ~$930 - $1,060 USD</strong><br>
+    <span style="color:#166534;font-size:.85rem">Kh&#225;ch s&#7841;n ~$590 + Di chuy&#7875;n ~$175 + &#258;n u&#7889;ng &amp; tham quan ~$230</span>
+</div>
+</div></div>
 
 <footer>
     <p>Tour K&#7881; ni&#7879;m 15 n&#259;m ng&#224;y c&#432;&#7899;i Thanh Th&#7911;y &#8226; 27/04 - 01/05/2026 &#8226; Gia &#273;&#236;nh Ch&#7891;n Bun</p>
-    <p style="margin-top:8px;font-size:.8rem;opacity:.7">Gi&#225; tham kh&#7843;o, c&#243; th&#7875; thay &#273;&#7893;i. N&#234;n ki&#7875;m tra l&#7841;i tr&#432;&#7899;c chuy&#7871;n &#273;i.</p>
+    <p style="margin-top:6px;font-size:.75rem;opacity:.7">Gi&#225; tham kh&#7843;o. Ki&#7875;m tra l&#7841;i tr&#432;&#7899;c chuy&#7871;n &#273;i.</p>
 </footer>
 
 <script>
